@@ -15,7 +15,9 @@ public class GameLoopManager : MonoBehaviour {
     public int numPlayers;
 
     // Used to see which players are selected for tasks
-    Dictionary<string, bool> selectedPlayers;
+    Dictionary<string, int> selectedPlayers;
+
+    List<Quest> activeQuests;
 
     private void Awake()
     {
@@ -32,10 +34,10 @@ public class GameLoopManager : MonoBehaviour {
     public void RollQuests()
     {
         // First get a list of quests
-        List<Quest> quests = GetComponent<QuestsManager>().ChooseQuests(3, numPlayers);
+        activeQuests = GetComponent<QuestsManager>().ChooseQuests(3, numPlayers);
 
         // Do something if we are out of quests
-        if (quests == null)
+        if (activeQuests == null)
         {
             print("Ran out of quests!");
         }
@@ -54,6 +56,8 @@ public class GameLoopManager : MonoBehaviour {
         }
         */
     }
+
+    
 
     public void UpdateLists()
     {

@@ -26,6 +26,7 @@ public class Task
 
 
 // A quest has a description, a reward, a need, and some number of tasks.
+// DO NOT CHANGE
 
 [CreateAssetMenu(fileName = "New Quest", menuName = "Quest", order = 1)]
 public class Quest : ScriptableObject {
