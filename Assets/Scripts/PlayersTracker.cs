@@ -30,7 +30,6 @@ public class PlayersTracker : MonoBehaviour {
             for (int i = 5; i > 1; i--)
             {
                 int index = Random.Range(0, i);
-                print(index);
                 Passion[i - 1] = pList[index];
                 pList.RemoveAt(index);
                 index = Random.Range(0, i);
