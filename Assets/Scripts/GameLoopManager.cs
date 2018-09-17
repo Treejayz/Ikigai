@@ -74,6 +74,7 @@ public class GameLoopManager : MonoBehaviour {
                 for (int j = 0; j < activeQuests[i].tasks.Length; j++) {
                     GameObject task = questUI[i].transform.GetChild(j + 2).gameObject;
                     task.SetActive(true);
+                    task.transform.GetChild(0).gameObject.GetComponent<Text>().text = activeQuests[i].tasks[j].description;
                     Dropdown d = task.GetComponentInChildren<Dropdown>();
                     playerSelects.Add(d);
                     d.ClearOptions();
