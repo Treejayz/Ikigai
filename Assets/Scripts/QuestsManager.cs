@@ -48,7 +48,7 @@ public class QuestsManager : MonoBehaviour {
 
         // To prevent infinite loops,
         // AKA theres not enough quests for the players so it cant find any.
-        int numRolls = 15;
+        int numRolls = 100;
 
         while (numTasks < numPlayers && numRolls > 0)
         {
@@ -63,7 +63,7 @@ public class QuestsManager : MonoBehaviour {
             }
             else
             {
-                questTasks = Random.Range(1, Mathf.Clamp((numPlayers - numTasks + 1), 0, 5));
+                questTasks = Random.Range(1, Mathf.Clamp((numPlayers - numTasks + 1), 1, 5));
             }
 
             // Sort by difficulty
@@ -71,29 +71,35 @@ public class QuestsManager : MonoBehaviour {
             {
                 // If we have tasks of the corresponding difficulty and task amount,
                 // Then grab a random one of them. Same for each difficulty
-                if (easyQuests[questTasks].Count != 0)
+                if (easyQuests[questTasks-1].Count != 0)
                 {
-                    int quest = Random.Range(0, easyQuests[questTasks].Count);
-                    quests.Add(easyQuests[questTasks][quest]);
-                    numTasks += questTasks;
+                    int quest = Random.Range(0, easyQuests[questTasks-1].Count);
+                    if (!quests.Contains(easyQuests[questTasks-1][quest])) {
+                        quests.Add(easyQuests[questTasks-1][quest]);
+                        numTasks += questTasks;
+                    }
                 }
             }
             else if (difficulty == 2)
             {
-                if (mediumQuests[questTasks].Count != 0)
+                if (mediumQuests[questTasks-1].Count != 0)
                 {
-                    int quest = Random.Range(0, mediumQuests[questTasks].Count);
-                    quests.Add(mediumQuests[questTasks][quest]);
-                    numTasks += questTasks;
+                    int quest = Random.Range(0, mediumQuests[questTasks-1].Count);
+                    if (!quests.Contains(mediumQuests[questTasks-1][quest])) {
+                        quests.Add(mediumQuests[questTasks-1][quest]);
+                        numTasks += questTasks;
+                    }
                 }
             }
             else
             {
-                if (hardQuests[questTasks].Count != 0)
+                if (hardQuests[questTasks-1].Count != 0)
                 {
-                    int quest = Random.Range(0, hardQuests[questTasks].Count);
-                    quests.Add(hardQuests[questTasks][quest]);
-                    numTasks += questTasks;
+                    int quest = Random.Range(0, hardQuests[questTasks-1].Count);
+                    if (!quests.Contains(hardQuests[questTasks-1][quest])) {
+                        quests.Add(hardQuests[questTasks-1][quest]);
+                        numTasks += questTasks;
+                    }
                 }
             }
             // Subtract 1 to make sure we dont loop forever

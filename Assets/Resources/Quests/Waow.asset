@@ -20,6 +20,11 @@ MonoBehaviour:
   - stat: 0
     difficulty: 8
     description: Fight the giants off
+  - stat: 0
+    difficulty: 8
+    description: Fight the giants off
   - stat: 1
     difficulty: 7
     description: Help keep town calm & escape
+  succeed: You succeed
+  fail: You fail

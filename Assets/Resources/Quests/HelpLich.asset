@@ -20,5 +20,7 @@ MonoBehaviour:
   overallDifficulty: 2
   tasks:
   - stat: 0
-    difficulty: 0
-    description: 
+    difficulty: 3
+    description: become henchman
+  succeed: You succeed
+  fail: You fail

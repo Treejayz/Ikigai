@@ -765,6 +765,17 @@ Prefab:
       propertyPath: questUI.Array.data[2]
       value: 
       objectReference: {fileID: 1605492318}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: submit
+      value: 
+      objectReference: {fileID: 1994333553}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1994333553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
+    type: 2}
+  m_PrefabInternal: {fileID: 806566338}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
