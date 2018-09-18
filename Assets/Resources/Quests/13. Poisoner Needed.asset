@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 13. Poisoner Needed
+  m_EditorClassIdentifier: 
+  description: "I need a poisoner to do a thing and not ask any questions they don\u2019t
+    want answers to."
+  rewardDescription: "If you do it I\u2019ll make sure you\u2019re well taken care
+    of."
+  money: 3
+  need: -2
+  overallDifficulty: 1
+  tasks:
+  - stat: 4
+    difficulty: 3
+    description: One poisoner that must be able to cast rudimentary spells and not
+      ask too many questions
+  succeed: You show up to a restaurant and cast a simple hex on a drink sitting in
+    the window. The next morning you wake up to a fat sack of coins in your hand.
+  fail: "You show up to a restaurant and cast either a simple hex on a drink sitting
+    in the window. Or maybe it was a minor blessing? You\u2019re not sure, whichever
+    it was, you don\u2019t get paid and should probably watch over your shoulder for
+    the next few days."
