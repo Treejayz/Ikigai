@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 19 Insta-Circus
+  m_EditorClassIdentifier: 
+  description: "URGENT: Whole circus died in a marching band accident. We need a group
+    of VERY-talented individuals to fill in. \r\n"
+  rewardDescription: "We\u2019ll pay triple the salary we give to our usual acts.\r\n"
+  money: 3
+  need: 1
+  overallDifficulty: 3
+  tasks:
+  - stat: 1
+    difficulty: 7
+    description: 'An exceptionally charismatic ring-master '
+  - stat: 2
+    difficulty: 7
+    description: A very swift trapeze artist.
+  - stat: 2
+    difficulty: 7
+    description: An equally swift dancer.
+  - stat: 0
+    difficulty: 8
+    description: 'And a daring and burly lion tamer '
+  succeed: "You put on the kind of show that circus promoters only dream about and
+    fill all the seats. Afterward, the promoter begs you to stay but you know that
+    you can\u2019t all stay here.\r\n"
+  fail: "The crowd erupts with laughter at the pitiful display you\u2019ve put on
+    for them. Things are falling apart, dangerous animals are wandering through the
+    audience and all the while an angry clown is throwing pies at your faces. You
+    skip town and decide never to speak of this again.\r\n"

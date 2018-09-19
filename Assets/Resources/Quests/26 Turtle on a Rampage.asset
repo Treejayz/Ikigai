@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 26 Turtle on a Rampage
+  m_EditorClassIdentifier: 
+  description: "A magical turtle has kidnapped the princess! I want to help, but I
+    am completely unarmed and these overalls are very limiting. I need a strong fighter
+    to take my place! (Must be good at jumping.)  \r\n"
+  rewardDescription: "Lots of gold coins to be found along the way!\r\n"
+  money: 5
+  need: 2
+  overallDifficulty: 2
+  tasks:
+  - stat: 0
+    difficulty: 5
+    description: 'A strong fighter to recover the princess! '
+  succeed: "You\u2019ve succeeded by jumping on the turtle\u2019s head and sending
+    him into a pool of lava. The princess was recovered unharmed!\r\n"
+  fail: "Sorry, but your princess was in another castle. (Well, actually, you just
+    fell into a pit.)\r\n"

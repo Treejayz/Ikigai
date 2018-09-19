@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 9 Bully The Hobbits
+  m_EditorClassIdentifier: 
+  description: "There\u2019s a group of hobbits that goes around town helping everyone.
+    It makes me angry for some reason and I want someone to rough them up. I don\u2019t
+    need anyone particularly strong, just someone to push them down basically.  \r\n"
+  rewardDescription: "Just a little loose change in my pocket.\r\n"
+  money: -2
+  need: 3
+  overallDifficulty: 1
+  tasks:
+  - stat: 0
+    difficulty: 3
+    description: 'Someone to bully a group of hobbits. '
+  succeed: "Nice! You\u2019ve managed to bully the hobbits.\r\n"
+  fail: "You failed to have the physical strength the bully the hobbits.\r\n"

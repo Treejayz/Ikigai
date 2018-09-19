@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 5 Art Heist
+  m_EditorClassIdentifier: 
+  description: "The Dwarves a showcasing a new art exhibit that makes the Elves very
+    jealous. The Elves are looking to break in to the state of the art facility and
+    steal the piece so they can get it all to themselves. \r\n"
+  rewardDescription: "The Elves can pay you handsomely. \r\n"
+  money: 5
+  need: -5
+  overallDifficulty: 3
+  tasks:
+  - stat: 3
+    difficulty: 10
+    description: 'A mastermind to plan everything out. '
+  - stat: 0
+    difficulty: 9
+    description: 'Someone to fight deal with security guards. '
+  - stat: 2
+    difficulty: 8
+    description: 'An expert in stealth to help guide the team. '
+  - stat: 4
+    difficulty: 9
+    description: 'A magical lock specialist to open any cursed doors. '
+  succeed: "Success! The exhibit has been stolen and the Dwarves are devastated.\r\n"
+  fail: "You were caught in the act and failed the mission.\r\n"

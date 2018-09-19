@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 15 King of Bad Performances
+  m_EditorClassIdentifier: 
+  description: The King of Bad Performances needs some performers! He wants a barbershop
+    trio at his dinner party and is willing to pay for a good.
+  rewardDescription: "You\u2019ll be paid the standard rate for a royal performance
+    which is not too shabby ($$$)."
+  money: 5
+  need: 0
+  overallDifficulty: 1
+  tasks:
+  - stat: 3
+    difficulty: 3
+    description: 'A knowledgeable conductor '
+  - stat: 1
+    difficulty: 4
+    description: 'A singer with a commanding presence '
+  - stat: 1
+    difficulty: 4
+    description: 'Another singer with an equally commanding presence '
+  succeed: "You sing for a dining hall full of nobles and as the night carries on,
+    the whole room is singing along and having a great time. You are sent on your
+    way with a hearty pat on the back from your king.\r\n"
+  fail: "The King of Bad Performances knows a bad performance when he sees one and
+    he sees one. You are ordered to leave without pay or dessert.\r\n"

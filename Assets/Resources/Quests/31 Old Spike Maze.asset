@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 31 Old Spike Maze
+  m_EditorClassIdentifier: 
+  description: "There\u2019s an old lady that claims there\u2019s treasure in the
+    center of the old spike maze. The maze is covered in spikes, but it\u2019s old
+    enough that they\u2019re not very sharp anymore.\r\n"
+  rewardDescription: "You\u2019ll get a decent amount of the treasure.\r\n"
+  money: 4
+  need: 0
+  overallDifficulty: 1
+  tasks:
+  - stat: 2
+    difficulty: 3
+    description: 'Someone swift to sneak around the spikes. '
+  - stat: 2
+    difficulty: 3
+    description: 'Another swift adventurer to take over if they die. '
+  - stat: 3
+    difficulty: 3
+    description: "A nerd who\u2019s decent at mazes. "
+  - stat: 3
+    difficulty: 3
+    description: "Someone who\u2019s fairly knowledgeable about treating wounds. "
+  succeed: "You successfully retrieved the treasure with only a few scratches!\r\n"
+  fail: "You couldn\u2019t make it to the treasure, too many spikes got in the way.\r\n"

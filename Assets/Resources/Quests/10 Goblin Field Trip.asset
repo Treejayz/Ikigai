@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 10 Goblin Field Trip
+  m_EditorClassIdentifier: 
+  description: "A class of 50 goblins children are on a field trip to a bank. Some
+    are messing up bank papers, some are being sassy, some are even fist fighting
+    with employees. The bank is going crazy and needs help.\r\n"
+  rewardDescription: "The school can give a reward slightly below average.\r\n"
+  money: -1
+  need: 2
+  overallDifficulty: 2
+  tasks:
+  - stat: 3
+    difficulty: 5
+    description: 'Someone to sort through and re-organize papers. '
+  - stat: 1
+    difficulty: 6
+    description: 'Someone to out sass the children. '
+  - stat: 0
+    difficulty: 5
+    description: 'Someone strong enough to break up the fist fights. '
+  succeed: "Success! The goblins are under control.\r\n"
+  fail: Failure! The goblins are roudier than ever.

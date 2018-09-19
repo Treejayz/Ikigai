@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 30 Bone Bread
+  m_EditorClassIdentifier: 
+  description: "A giant needs some way to power his mill to grind down bones to make
+    bread. There\u2019s a treadmill that needs someone who\u2019s especially fast.\r\n"
+  rewardDescription: "Slightly above average compensation.\r\n"
+  money: 3
+  need: -2
+  overallDifficulty: 1
+  tasks:
+  - stat: 2
+    difficulty: 2
+    description: "Someone who\u2019s agile and swift to run on a treadmill. "
+  succeed: "You were able to run on a treadmill, nice!\r\n"
+  fail: "You were too clumsy to run on a treadmill. You\u2019re not quite sure how\u2026\r\n"

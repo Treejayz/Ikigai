@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 28 Stooges Act
+  m_EditorClassIdentifier: 
+  description: "I am looking for some performers to do an act at my dinner party remonicent
+    of \u201CThe Three Stooges.\u201D If you don\u2019t know who they are, don\u2019t
+    bother coming.\r\n"
+  rewardDescription: "Will pay more than you would expect, as I am very wealthy.\r\n"
+  money: 4
+  need: 0
+  overallDifficulty: 1
+  tasks:
+  - stat: 1
+    difficulty: 3
+    description: 'The funny one. '
+  - stat: 3
+    difficulty: 2
+    description: 'The sensible one. '
+  - stat: 2
+    difficulty: 3
+    description: 'The clumsy one. '
+  succeed: "Oh, I loved the part where the funny one was eating a banana, and then
+    the clumsy one tripped over it, and then the sensible just stood there shaking
+    their head. What fun!\r\n"
+  fail: They were the simplest roles I could think of, but you somehow got them all
+    wrong!

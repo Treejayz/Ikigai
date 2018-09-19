@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: "18 \u201CRobin Hood\u201D"
+  m_EditorClassIdentifier: 
+  description: "Looking for a \u201CRobin Hood\u201D figure to help with a little
+    redistribution of wealth from our greedy king to the people.\r\n"
+  rewardDescription: "Right now we couldn\u2019t hope to make your rates but we could
+    make it plus a little tip if you take a little \u201Ccommission\u201D\r. I'd say
+    that's just slightly above the average. "
+  money: 1
+  need: 4
+  overallDifficulty: 2
+  tasks:
+  - stat: 2
+    difficulty: 7
+    description: "A sneaky and swift \u201CRobin Hood\u201D to steal from the king. "
+  succeed: "The town seems much more stable and happy now and you even made a little
+    money on the side. Today was a good day.\r\n"
+  fail: "The royal sheriff is a little to wily for you and while you feel bad about
+    the town, this gambit isn\u2019t worth your life.\r\n"

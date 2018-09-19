@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 20 Stop the Warlock
+  m_EditorClassIdentifier: 
+  description: "An evil, sweet-toothed Warlock is terrorizing the entire continent!
+    He cast a curst to turn everything into candy! The curse is slowly spreading out
+    from his lair on Mount Doom and must be stopped!\r\n"
+  rewardDescription: "All nearby towns have donated to provide a hearty reward.\r\n"
+  money: 3
+  need: 4
+  overallDifficulty: 2
+  tasks:
+  - stat: 4
+    difficulty: 6
+    description: 'Wizard to stop the spread of the curse '
+  - stat: 1
+    difficulty: 4
+    description: 'A charming leader to evacuate nearby towns '
+  - stat: 1
+    difficulty: 4
+    description: 'Another equally charming leader to evacuate nearby towns '
+  - stat: 0
+    difficulty: 6
+    description: 'A talented fighter to defeat the Warlock in combat '
+  succeed: "You put an end to the Warlock\u2019s devious plan and bring peace to the
+    surrounding villages. You take your reward with pride as you feel like you\u2019ve
+    really gotten a handle on this whole adventuring thing\r."
+  fail: "Try as you might, you couldn\u2019t defeat a simple warlock or put an end
+    to his plan. Luckily when things appeared to be at their worst, another, more
+    competent adventuring party comes in, saves the day and comments on how incompetent
+    you are.\r"

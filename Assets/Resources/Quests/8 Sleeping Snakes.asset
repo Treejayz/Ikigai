@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 8 Sleeping Snakes
+  m_EditorClassIdentifier: 
+  description: "A prince has fallen into a pit of sleeping snakes. We need to get
+    them out without waking any of the snakes.\r\n"
+  rewardDescription: "The King will reward you handsomely.\r\n"
+  money: 5
+  need: 4
+  overallDifficulty: 2
+  tasks:
+  - stat: 2
+    difficulty: 6
+    description: 'Someone sneak in and save the prince. '
+  succeed: "Nice! The prince has been saved without waking the snakes.\r\n"
+  fail: "You\u2019ve woken every snake in a 10 mile radius and they\u2019re all coming
+    after you (mission failed).\r"

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 17 Attack on Giants
+  m_EditorClassIdentifier: 
+  description: "Our town is under attack by giants! There\u2019s no way we save the
+    town but lives can still be saved!\r\n"
+  rewardDescription: "You will be compensated like a King. In our society, our King
+    is paid the same as everyone else though. You\u2019ll be getting an average amount. "
+  money: 0
+  need: 5
+  overallDifficulty: 3
+  tasks:
+  - stat: 1
+    difficulty: 8
+    description: 'A leader to calm the townspeople and organize a safe evacuation
+      plan. '
+  - stat: 0
+    difficulty: 8
+    description: A daring fighter to keep the giants at bay.
+  succeed: "You manage to evacuate the whole town before the giants finally get past
+    your fighter. You watch the buildings be destroyed comforted by the fact that
+    that they can all be rebuilt while the people cannot.\r\n"
+  fail: "The town isn\u2019t even half-evacuated by the time the giants get past your
+    fighter. You both narrowly escape with your lives from what you expect to be a
+    bloodbath.\r\n"

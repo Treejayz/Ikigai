@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 27 Cooking Extravaganza
+  m_EditorClassIdentifier: 
+  description: "A beautiful witch (that\u2019s me) needs you to gather ingredients
+    for her\u2026 \u201Csoup.\u201D They can all be found throughout the Super Safe
+    Woods, but my back is hurting me and I\u2019d rather not leave the house."
+  rewardDescription: "I\u2019ll give you a taste of my soup if you\u2019d like :)
+    (plus a little gold for your troubles)\r\n"
+  money: 2
+  need: 1
+  overallDifficulty: 1
+  tasks:
+  - stat: 2
+    difficulty: 3
+    description: 'Climb the mountain to get the lonesome clover from the top. '
+  - stat: 0
+    difficulty: 3
+    description: "Kill a frog from the forest and bring me it\u2019s legs. "
+  - stat: 1
+    difficulty: 3
+    description: "Get a sparkling blue bottle from the potion seller. You\u2019ll
+      need to bargain with him. "
+  - stat: 4
+    difficulty: 3
+    description: 'Run a simple curse on a branch in the woods and bring me the leaves
+      that grow from it. '
+  succeed: "Wonderful\u2026 WONDERFUL! *cackle cackle cackle!* *cough cough* Sorry\u2026
+    would any of you like a taste? :)\r\n"
+  fail: "No no no! This is all wrong! Ugh, fine, I\u2019ll do this myself. "

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 2 Sad King
+  m_EditorClassIdentifier: 
+  description: A King has his birthday party soon, but all his subjects are gloomy
+    due to the plague. He is afraid this will ruin his big day.
+  rewardDescription: "The King\u2019s gold."
+  money: 5
+  need: 3
+  overallDifficulty: 3
+  tasks:
+  - stat: 1
+    difficulty: 8
+    description: "Go across the kingdom and raise as much enthusiasm about the King\u2019s
+      birthday as possible."
+  succeed: The birthday has been a huge success, thank you!
+  fail: The King is disappointed in your work. You have failed.

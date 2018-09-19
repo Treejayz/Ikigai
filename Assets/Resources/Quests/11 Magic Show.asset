@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 11 Magic Show
+  m_EditorClassIdentifier: 
+  description: 'A famous warlock singer needs their concert to have spectacular magical
+    visuals to wow the crowd. '
+  rewardDescription: "The singer can pay a fairly substantial amount.\r\n"
+  money: 3
+  need: 1
+  overallDifficulty: 2
+  tasks:
+  - stat: 4
+    difficulty: 5
+    description: 'A specialist in magic and visual effects. '
+  succeed: "Good work! Everyone was impressed by your magic.\r\n"
+  fail: 'Sorry, not good enough. Try birthday parties.
+
+'

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 12 Forgetful Hobbit
+  m_EditorClassIdentifier: 
+  description: "A Hobbit has found a diary from when she was a little girl, but she
+    forget the magic words to open it. She needs someone with knowledge of basic magic
+    open it. \r"
+  rewardDescription: "I can give you a little of my allowance.\r\n"
+  money: 0
+  need: 2
+  overallDifficulty: 1
+  tasks:
+  - stat: 4
+    difficulty: 2
+    description: 'Person who knows basic magic '
+  succeed: Thank you! You succeeded in opening the lock.
+  fail: "You couldn\u2019t open the lock and don\u2019t feel very magical.\r\n"
