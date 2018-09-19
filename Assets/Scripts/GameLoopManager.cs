@@ -17,6 +17,8 @@ public class GameLoopManager : MonoBehaviour {
     [HideInInspector]
     public int numPlayers;
 
+	int round = 0;
+
     // Used to see which players are selected for tasks
     Dictionary<string, int> selectedPlayers = new Dictionary<string, int>();
     List<string> playerOptions = new List<string>();
@@ -37,8 +39,17 @@ public class GameLoopManager : MonoBehaviour {
 
     public void RollQuests()
     {
-        // First get a list of quests
-        activeQuests = GetComponent<QuestsManager>().ChooseQuests(3, numPlayers);
+		round += 1;
+
+		// First get a list of quests
+		if (round <= 3) {
+			activeQuests = GetComponent<QuestsManager> ().ChooseQuests (1, numPlayers);
+		} else if (round <= 5) {
+        
+			activeQuests = GetComponent<QuestsManager> ().ChooseQuests (2, numPlayers);
+		} else {
+			activeQuests = GetComponent<QuestsManager> ().ChooseQuests (3, numPlayers);
+		}
 
         submit.interactable = false;
 
@@ -68,7 +79,7 @@ public class GameLoopManager : MonoBehaviour {
             {
                 questUI[i].SetActive(true);
                 questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].tasks.Length + " Heroes Wanted:";
-                questUI[i].transform.GetChild(1).GetComponent<Text>().text = activeQuests[i].description + "\n\n" + activeQuests[i].rewardDescription;
+                questUI[i].transform.GetChild(1).GetComponent<Text>().text = activeQuests[i].description + "\n\n<i>Reward: " + activeQuests[i].rewardDescription + "</i>";
                 
                 for (int j = activeQuests[i].tasks.Length; j < 5; j++) {
                     questUI[i].transform.GetChild(j + 2).gameObject.SetActive(false);
@@ -193,7 +204,7 @@ public class GameLoopManager : MonoBehaviour {
 				i2++;
 				playercount++;
 			}
-			if (taskSuccesses < quest.tasks.Length / 2) {
+			if (taskSuccesses == 0 || taskSuccesses < quest.tasks.Length / 2 ) {
 				questSuccess = false;
 				resultUI [i].GetComponentsInChildren<Text> () [0].text = "Failed Quest"; 
 			} else {
@@ -224,7 +235,7 @@ public class GameLoopManager : MonoBehaviour {
 					taskText +=  player.name + " has recived "+ ikigai +" ikiai points for their work\n\n";
 				} else {
 					//Failed quest
-					int ikigai = calculateIkigai(player.Passion[stat], -5, player.Greed, 0, player.Need);
+					int ikigai = calculateIkigai(player.Passion[stat], -5, player.Greed, quest.need * -1, player.Need);
 					taskText +=  player.name + " has recived "+ ikigai +" ikiai points for their work\n\n";
 				}
 				resultUI [i].GetComponentsInChildren<Text> () [i2 + 1].text += taskText; 
