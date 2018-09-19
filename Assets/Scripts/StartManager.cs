@@ -16,6 +16,7 @@ public class StartManager : MonoBehaviour {
     public GameObject startCanvas;
     public GameObject questCanvas;
     public GameObject statsCanvas;
+	public GameObject resultsCanvas;
 
     PlayersTracker playersTracker;
 
@@ -83,4 +84,8 @@ public class StartManager : MonoBehaviour {
         statsCanvas.SetActive(!statsCanvas.activeSelf);
     }
 
+	public void ToggleResults()
+	{
+		resultsCanvas.SetActive(!resultsCanvas.activeSelf);
+	}
 }
