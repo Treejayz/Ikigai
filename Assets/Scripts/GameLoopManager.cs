@@ -42,6 +42,7 @@ public class GameLoopManager : MonoBehaviour {
 
         submit.interactable = false;
 
+        print(activeQuests.Count);
         // Do something if we are out of quests
         if (activeQuests == null)
         {
@@ -58,7 +59,6 @@ public class GameLoopManager : MonoBehaviour {
             playerOptions.Add("Select Player");
             foreach (Playerstats player in GetComponent<PlayersTracker>().players)
             {
-                print(player.name);
                 selectedPlayers.Add(player.name, 0);
                 playerOptions.Add(player.name);
             }
@@ -66,6 +66,7 @@ public class GameLoopManager : MonoBehaviour {
             playerSelects.Clear();
             for (int i = 0; i < activeQuests.Count; i++)
             {
+                questUI[i].SetActive(true);
                 questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].tasks.Length + " Heroes Wanted:";
                 questUI[i].transform.GetChild(1).GetComponent<Text>().text = activeQuests[i].description + "\n\n" + activeQuests[i].rewardDescription;
                 
@@ -80,8 +81,10 @@ public class GameLoopManager : MonoBehaviour {
                     playerSelects.Add(d);
                     d.ClearOptions();
                     d.AddOptions(playerOptions);
+                    d.value = 0;
                 }
-            } 
+            }
+
         }
     }
 
@@ -94,7 +97,7 @@ public class GameLoopManager : MonoBehaviour {
         {
             selectedPlayers[key] = 0;
         }
-        for (int i = 0; i < numPlayers; i++) {
+        for (int i = 0; i < playerSelects.Count; i++) {
             if (playerSelects[i].captionText.text != "Select Player" && playerOptions.Contains(playerSelects[i].captionText.text)) {
                 selectedPlayers[playerSelects[i].captionText.text] = i + 1;
             }
