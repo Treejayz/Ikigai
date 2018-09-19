@@ -16,7 +16,7 @@ MonoBehaviour:
     to take my place! (Must be good at jumping.)  \r\n"
   rewardDescription: "Lots of gold coins to be found along the way!\r\n"
   money: 5
-  need: 2
+  need: 3
   overallDifficulty: 2
   tasks:
   - stat: 0

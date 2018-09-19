@@ -14,8 +14,8 @@ MonoBehaviour:
   description: Package delivery is getting very competitive. We need an expert pair
     of adventurers to put us ahead of the game.
   rewardDescription: "If you succeed you\u2019ll be compensated very well.\r\n"
-  money: 4
-  need: 3
+  money: 5
+  need: 4
   overallDifficulty: 3
   tasks:
   - stat: 4

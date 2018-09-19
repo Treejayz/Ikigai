@@ -15,7 +15,7 @@ MonoBehaviour:
     due to the plague. He is afraid this will ruin his big day.
   rewardDescription: "The King\u2019s gold."
   money: 5
-  need: 3
+  need: -1
   overallDifficulty: 3
   tasks:
   - stat: 1

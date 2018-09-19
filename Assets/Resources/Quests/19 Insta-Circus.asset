@@ -22,10 +22,10 @@ MonoBehaviour:
     difficulty: 7
     description: 'An exceptionally charismatic ring-master '
   - stat: 2
-    difficulty: 7
+    difficulty: 8
     description: A very swift trapeze artist.
   - stat: 2
-    difficulty: 7
+    difficulty: 8
     description: An equally swift dancer.
   - stat: 0
     difficulty: 8
