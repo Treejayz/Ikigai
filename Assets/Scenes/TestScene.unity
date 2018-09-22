@@ -113,12 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &79353547 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-    type: 2}
-  m_PrefabInternal: {fileID: 1900316734}
-  m_Script: {fileID: 11500000, guid: b51354a24049f7a438d47602abee8e0b, type: 3}
 --- !u!114 &79353549 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
@@ -238,30 +232,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114293834952758370, guid: 7c072faac579f0c498974a2ba6cc2f4b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 79353547}
-    - target: {fileID: 114409436594329712, guid: 7c072faac579f0c498974a2ba6cc2f4b,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 79353547}
-    - target: {fileID: 1087114277255806, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224546853687911958, guid: 7c072faac579f0c498974a2ba6cc2f4b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -125
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316196397998162, guid: 7c072faac579f0c498974a2ba6cc2f4b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
