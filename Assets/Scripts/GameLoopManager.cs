@@ -8,6 +8,7 @@ public class GameLoopManager : MonoBehaviour {
     // The 3 quest objects which contain some text and dropdown fields for the tasks
     public GameObject[] questUI = new GameObject[3];
 	public GameObject[] resultUI = new GameObject[3];
+    public GameObject[] jobUI = new GameObject[3];
 
     public Button submit;
 
@@ -35,6 +36,41 @@ public class GameLoopManager : MonoBehaviour {
                 playerSelects.Add(temp[i]);
             }
         }
+    }
+
+    public void RollJobs()
+    {
+        Dictionary<string, string> jobs = GetComponent<JobManager>().ChooseJobs();
+        List<string> jobTitles = new List<string>(jobs.Keys);
+        GetComponent<CanvasManager>().SetJob();
+
+        for (int i = 0; i < 3; i++)
+        {
+            jobUI[i].transform.GetChild(0).GetComponent<Text>().text = jobTitles[i];
+            jobUI[i].transform.GetChild(1).GetComponent<Text>().text = jobs[jobTitles[i]];
+            jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().ClearOptions();
+            jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().AddOptions(playerOptions);
+            jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().value = 0;
+        }
+    }
+
+    public void SubmitJobs()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().value != 0)
+            {
+                string name = jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().captionText.text;
+                if (name != "Select Player" && playerOptions.Contains(name))
+                {
+                    GetComponent<PlayersTracker>().RetirePlayer(name);
+                    numPlayers -= 1;
+                }
+            }
+        }
+
+        GetComponent<CanvasManager>().SetQuest();
+        RollQuests();
     }
 
     public void RollQuests()

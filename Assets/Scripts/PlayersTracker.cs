@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayersTracker : MonoBehaviour {
 
     public List<Playerstats> players;
+    public List<Playerstats> retired;
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
 		players = new List<Playerstats>();
+        retired = new List<Playerstats>();
     }
 
     // Rolls stats for any amount of players, clears the old stats and stores the new ones.
@@ -85,5 +87,20 @@ public class PlayersTracker : MonoBehaviour {
             players.Add(playerstats);
 
         }
+    }
+
+    public void RetirePlayer(string name)
+    {
+
+        foreach (Playerstats player in players)
+        {
+            if (string.Compare(player.name, name) == 0)
+            {
+                retired.Add(player);
+                players.Remove(player);
+                break;
+            }
+        }
+
     }
 }

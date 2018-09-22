@@ -13,12 +13,9 @@ public class StartManager : MonoBehaviour {
     [HideInInspector]
     public static int numPlayers;
 
-    public GameObject startCanvas;
-    public GameObject questCanvas;
-    public GameObject statsCanvas;
-	public GameObject resultsCanvas;
-
     PlayersTracker playersTracker;
+
+    public GameObject statsCanvas;
 
 	// Use this for initialization
 	void Awake () {
@@ -74,18 +71,6 @@ public class StartManager : MonoBehaviour {
         GetComponent<GameLoopManager>().numPlayers = numPlayers;
         GetComponent<GameLoopManager>().RollQuests();
         // turn off the player selection canvas and turn on the quest selection canvas
-        startCanvas.SetActive(false);
-        questCanvas.SetActive(true);
+        GetComponent<CanvasManager>().SetQuest();
     }
-
-    // yep
-    public void ToggleStats()
-    {
-        statsCanvas.SetActive(!statsCanvas.activeSelf);
-    }
-
-	public void ToggleResults()
-	{
-		resultsCanvas.SetActive(!resultsCanvas.activeSelf);
-	}
 }

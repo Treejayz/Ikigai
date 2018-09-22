@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 114668057203062096}
   - component: {fileID: 114796408140352838}
   - component: {fileID: 114116324453570960}
+  - component: {fileID: 114661126756421254}
+  - component: {fileID: 114830724994828966}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -54,6 +56,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcff99745d31aa40afeceaaebde2610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114661126756421254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347323958438476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63864cc1d1a26984ba13cfbbfd0496f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jobsTextFile: {fileID: 4900000, guid: adfbe69f0aa638442b57e8d29062e7d1, type: 3}
 --- !u!114 &114668057203062096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,6 +80,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  resultUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  jobUI:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -82,6 +104,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c1c831efe59b24380d9efd654f2c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114830724994828966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347323958438476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11621c51ec146c64886ed22f55586b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  questCanvas: {fileID: 0}
+  statsCanvas: {fileID: 0}
+  resultsCanvas: {fileID: 0}
+  jobsCanvas: {fileID: 0}
 --- !u!114 &114948808600989200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,6 +139,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  startCanvas: {fileID: 0}
-  questCanvas: {fileID: 0}
   statsCanvas: {fileID: 0}

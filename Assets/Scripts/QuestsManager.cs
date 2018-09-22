@@ -50,6 +50,13 @@ public class QuestsManager : MonoBehaviour {
         // AKA theres not enough quests for the players so it cant find any.
         int numRolls = 100;
 
+        bool tooFew = false;
+
+        if (numPlayers < 3) {
+            numPlayers = 3;
+            tooFew = true;
+        }
+
         while (numTasks < numPlayers && numRolls > 0)
         {
 
@@ -63,7 +70,14 @@ public class QuestsManager : MonoBehaviour {
             }
             else
             {
-                questTasks = Random.Range(1, Mathf.Clamp((numPlayers - numTasks + 1), 1, 5));
+                if (tooFew)
+                {
+                    questTasks = 1;
+                }
+                else
+                {
+                    questTasks = Random.Range(1, Mathf.Clamp((numPlayers - numTasks + 1), 1, 5));
+                }  
             }
 
             // Sort by difficulty
