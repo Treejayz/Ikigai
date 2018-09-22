@@ -21,15 +21,16 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 3
-    description: 'Someone swift to sneak around the spikes. '
+    description: 'Someone swift and agile to sneak around the spikes. '
   - stat: 2
     difficulty: 3
-    description: 'Another swift adventurer to take over if they die. '
+    description: 'Another agile adventurer to take over if they die. '
   - stat: 3
     difficulty: 3
-    description: "A nerd who\u2019s decent at mazes. "
+    description: "A smart nerd who\u2019s decent at mazes. "
   - stat: 3
     difficulty: 3
-    description: "Someone who\u2019s fairly knowledgeable about treating wounds. "
+    description: "Someone who\u2019s fairly knowledgeable and smart about treating
+      wounds. "
   succeed: "You successfully retrieved the treasure with only a few scratches!\r\n"
   fail: "You couldn\u2019t make it to the treasure, too many spikes got in the way.\r\n"

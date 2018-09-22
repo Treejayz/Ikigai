@@ -23,13 +23,13 @@ MonoBehaviour:
     description: 'An exceptionally charismatic ring-master '
   - stat: 2
     difficulty: 8
-    description: A very swift trapeze artist.
+    description: 'A very swift and agile trapeze artist '
   - stat: 2
     difficulty: 8
-    description: An equally swift dancer.
+    description: 'An equally swift and agile dancer '
   - stat: 0
     difficulty: 8
-    description: 'And a daring and burly lion tamer '
+    description: 'And a daring and burly lion tamer with impressive strength. '
   succeed: "You put on the kind of show that circus promoters only dream about and
     fill all the seats. Afterward, the promoter begs you to stay but you know that
     you can\u2019t all stay here.\r\n"

@@ -21,16 +21,18 @@ MonoBehaviour:
   tasks:
   - stat: 4
     difficulty: 6
-    description: 'Wizard to stop the spread of the curse '
+    description: 'A wizard to stop the spread of the magic curse. '
   - stat: 1
     difficulty: 4
-    description: 'A charming leader to evacuate nearby towns '
+    description: 'A charming, charismatic leader to evacuate nearby towns '
   - stat: 1
     difficulty: 4
-    description: 'Another equally charming leader to evacuate nearby towns '
+    description: 'Another equally charming and charismatic leader to evacuate nearby
+      towns '
   - stat: 0
     difficulty: 6
-    description: 'A talented fighter to defeat the Warlock in combat '
+    description: "A talented fighter who\u2019s strong enough to defeat the Warlock
+      in combat. "
   succeed: "You put an end to the Warlock\u2019s devious plan and bring peace to the
     surrounding villages. You take your reward with pride as you feel like you\u2019ve
     really gotten a handle on this whole adventuring thing\r."

@@ -21,8 +21,8 @@ MonoBehaviour:
   tasks:
   - stat: 4
     difficulty: 2
-    description: One poisoner that must be able to cast rudimentary spells and not
-      ask too many questions
+    description: 'One magic poisoner that must be able to cast rudimentary magic spells
+      and not ask too many questions. '
   succeed: "You show up to a restaurant and cast a simple hex on a drink sitting in
     the window. The next morning you wake up to a fat sack of coins in your hand.\r\n"
   fail: "You show up to a restaurant and cast either a simple hex on a drink sitting

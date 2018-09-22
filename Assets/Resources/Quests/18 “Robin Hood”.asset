@@ -22,7 +22,7 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 7
-    description: "A sneaky and swift \u201CRobin Hood\u201D to steal from the king. "
+    description: "A sneaky and agile \u201CRobin Hood\u201D to steal from the king. "
   succeed: "The town seems much more stable and happy now and you even made a little
     money on the side. Today was a good day.\r\n"
   fail: "The royal sheriff is a little to wily for you and while you feel bad about

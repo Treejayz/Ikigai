@@ -20,6 +20,6 @@ MonoBehaviour:
   tasks:
   - stat: 4
     difficulty: 6
-    description: 'General knowledge in medicine brewing '
+    description: 'General knowledge in magical medicine brewing. '
   succeed: Nice! Your medicine worked well.
   fail: Whoops! You won't be getting a medical license any time soon.

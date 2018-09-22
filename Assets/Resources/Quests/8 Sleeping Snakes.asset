@@ -20,7 +20,7 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 6
-    description: 'Someone sneak in and save the prince. '
+    description: 'Someone agile to sneak in and save the prince. '
   succeed: "Nice! The prince has been saved without waking the snakes.\r\n"
   fail: "You\u2019ve woken every snake in a 10 mile radius and they\u2019re all coming
     after you (mission failed).\r"

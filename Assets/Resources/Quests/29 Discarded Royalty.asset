@@ -21,14 +21,15 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 7
-    description: "Get into the tower. There isn\u2019t a door or anything so Idk how
-      you\u2019re going to do that.  "
+    description: "Get into the tower using your agility. There isn\u2019t a door or
+      anything so Idk how you\u2019re going to do that.  "
   - stat: 0
     difficulty: 7
-    description: "Fight the monster or whatever that\u2019s guarding the bridge. "
+    description: "Fight the monster or whatever that\u2019s guarding the bridge with
+      your strength. "
   - stat: 4
     difficulty: 7
-    description: 'Break the chains that were cursed by my totally evil stepmother. '
+    description: 'Break the magic chains that were cursed by my totally evil stepmother. '
   succeed: " Thanks I guess. I\u2019m not going to kiss you though cause I\u2019m
     definitely straight."
   fail: "Smh WhY iS nO oNe CoMiNg??\r\n"

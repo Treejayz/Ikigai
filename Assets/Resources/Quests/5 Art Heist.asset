@@ -21,13 +21,13 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 10
-    description: 'A mastermind to plan everything out. '
+    description: 'A very smart mastermind to plan everything out. '
   - stat: 0
     difficulty: 9
-    description: 'Someone to fight deal with security guards. '
+    description: 'Someone strong to fight with security guards. '
   - stat: 2
     difficulty: 8
-    description: 'An expert in stealth to help guide the team. '
+    description: 'An expert in stealth and agility to help guide the team. '
   - stat: 4
     difficulty: 9
     description: 'A magical lock specialist to open any cursed doors. '

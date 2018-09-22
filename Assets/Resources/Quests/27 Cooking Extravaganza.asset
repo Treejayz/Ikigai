@@ -22,18 +22,19 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 3
-    description: 'Climb the mountain to get the lonesome clover from the top. '
+    description: 'Use your agility to climb the mountain to get the lonesome clover
+      from the top.  '
   - stat: 0
     difficulty: 3
-    description: "Kill a frog from the forest and bring me it\u2019s legs. "
+    description: "Use your strength to kill a frog from the forest and bring me it\u2019s
+      legs. "
   - stat: 1
     difficulty: 3
-    description: "Get a sparkling blue bottle from the potion seller. You\u2019ll
-      need to bargain with him. "
+    description: "Bargain with the potion seller, you\u2019ll need to be very charismatic. "
   - stat: 4
     difficulty: 3
-    description: 'Run a simple curse on a branch in the woods and bring me the leaves
-      that grow from it. '
+    description: 'Run a simple magical curse on a branch in the woods and bring me
+      the leaves that grow from it. '
   succeed: "Wonderful\u2026 WONDERFUL! *cackle cackle cackle!* *cough cough* Sorry\u2026
     would any of you like a taste? :)\r\n"
   fail: "No no no! This is all wrong! Ugh, fine, I\u2019ll do this myself. "

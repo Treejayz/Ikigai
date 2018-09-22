@@ -21,13 +21,13 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 5
-    description: 'Someone to think up some bridge plans '
+    description: 'Someone smart enough to think up some bridge plans '
   - stat: 0
     difficulty: 3
-    description: 'Someone strong to get all the rocks in place '
+    description: Someone strong to get all the rocks in place
   - stat: 1
     difficulty: 5
-    description: A linguist to distract the troll with riddles and a good personality.
+    description: 'A linguist to distract the troll with riddles and charisma. '
   succeed: "The bridge once again stands strong, connecting the two towns and while
     the Troll initially seems upset, you can tell they really appreciate what you
     did.\r\n"

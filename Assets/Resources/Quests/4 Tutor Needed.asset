@@ -20,6 +20,6 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 6
-    description: 'A really good tutor. '
+    description: "A really good tutor who\u2019s very smart. "
   succeed: You successfully taught the unteachable student!
   fail: "Mission failed. You\u2019ve been added to the list to failed tutors.\r\n"

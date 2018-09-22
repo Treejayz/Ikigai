@@ -21,9 +21,9 @@ MonoBehaviour:
   tasks:
   - stat: 0
     difficulty: 3
-    description: 'Someone to cut down the evil tree. '
+    description: 'Someone strong to cut down the evil tree. '
   - stat: 4
     difficulty: 2
-    description: 'Someone to un-curse our maybe cursed hangout tree '
+    description: 'Someone magical to un-curse our maybe cursed hangout tree '
   succeed: Success! Tree remove complete!
   fail: Failiure! The tree still stands, looming...

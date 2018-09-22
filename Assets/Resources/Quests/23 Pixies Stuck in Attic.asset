@@ -19,10 +19,10 @@ MonoBehaviour:
   tasks:
   - stat: 4
     difficulty: 4
-    description: Wizard to make pixies visible.
+    description: 'Wizard to make pixies visible using magic. '
   - stat: 0
     difficulty: 4
-    description: 'Fighter to kick out pixies '
+    description: 'Fighter to kick out pixies using deliberate strength. '
   succeed: "Apparently these pixies have been partying in this attic for days and
     are pretty played out. With a little effort you are able to coax them out. \r\n"
   fail: " Apparently these pixies have been partying in this attic for days and are

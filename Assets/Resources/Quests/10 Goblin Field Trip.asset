@@ -21,10 +21,10 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 5
-    description: 'Someone to sort through and re-organize papers. '
+    description: 'A smart nerd to sort through and re-organize papers. '
   - stat: 1
     difficulty: 6
-    description: 'Someone to out sass the children. '
+    description: 'Someone to out sass the children. A good amount of charisma needed. '
   - stat: 0
     difficulty: 5
     description: 'Someone strong enough to break up the fist fights. '

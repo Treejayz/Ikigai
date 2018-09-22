@@ -21,6 +21,6 @@ MonoBehaviour:
   tasks:
   - stat: 1
     difficulty: 3
-    description: 'Someone friendly to check-in with the old dragon. '
+    description: 'Someone friendly and charismatic to check-in with the old dragon. '
   succeed: "You successfully checked up on the dragon, they\u2019re alright.\r\n"
   fail: "You were too intimidating and made the dragon upset. Mission failed.\r\n"

@@ -20,10 +20,11 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 6
-    description: Someone to sneak into the lair.
+    description: 'Someone to sneak into the lair and be agile enough to sneak out. '
   - stat: 4
     difficulty: 4
-    description: "Someone to lift the curse on the thorn in the dragon\u2019s foot."
+    description: "Someone to lift the magic curse on the thorn in the dragon\u2019s
+      foot. "
   succeed: "The dragon becomes visibly calmer once you lift the curse and allows you
     to take the thorn out. You leave feeling as though you really did something good.\r"
   fail: "Your efforts cause the dragon to become even more irritable. The most you

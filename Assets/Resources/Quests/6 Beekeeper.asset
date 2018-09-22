@@ -21,7 +21,7 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 3
-    description: Someone smart to make a device to calm down the bees.
+    description: ' Someone smart to make a device to calm down the bees. '
   - stat: 1
     difficulty: 3
     description: 'Someone charismatic to market the honey better. '

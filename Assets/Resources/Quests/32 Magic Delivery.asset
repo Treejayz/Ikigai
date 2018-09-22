@@ -21,10 +21,10 @@ MonoBehaviour:
   - stat: 4
     difficulty: 9
     description: 'An expert magician to enchant shoes to make a runner go especially
-      fast. '
+      fast.  '
   - stat: 2
     difficulty: 8
-    description: "A runner who\u2019s already extremely swift and speedy. "
+    description: "An agile runner who\u2019s already extremely swift and speedy. "
   succeed: "Our company has never been faster! Thank you!\r\n"
   fail: 'You were too slow. Please run away from here as fast as possible.
 

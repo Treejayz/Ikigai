@@ -20,7 +20,7 @@ MonoBehaviour:
   tasks:
   - stat: 2
     difficulty: 10
-    description: 'A really really fast person to race me. '
+    description: 'A really really fast person to race me. May the most agile win. '
   succeed: "This guy runs like a blur but you know you\u2019re faster. The race is
     neck and neck until the very end where you let out one last burst of speed that
     takes your competitor and his wallet by surprise.\r\n"

@@ -21,11 +21,12 @@ MonoBehaviour:
   tasks:
   - stat: 1
     difficulty: 8
-    description: 'A leader to calm the townspeople and organize a safe evacuation
-      plan. '
+    description: 'A charismatic leader to calm the townspeople and organize a safe
+      evacuation plan. '
   - stat: 0
     difficulty: 8
-    description: A daring fighter to keep the giants at bay.
+    description: "A daring fighter who\u2019s strong enough to keep the giants at
+      bay "
   succeed: "You manage to evacuate the whole town before the giants finally get past
     your fighter. You watch the buildings be destroyed comforted by the fact that
     that they can all be rebuilt while the people cannot.\r\n"

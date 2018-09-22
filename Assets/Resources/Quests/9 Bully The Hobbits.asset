@@ -21,6 +21,6 @@ MonoBehaviour:
   tasks:
   - stat: 0
     difficulty: 3
-    description: 'Someone to bully a group of hobbits. '
+    description: 'Someone to bully a group of hobbits. Very minor strength needed. '
   succeed: "Nice! You\u2019ve managed to bully the hobbits.\r\n"
   fail: "You failed to have the physical strength the bully the hobbits.\r\n"

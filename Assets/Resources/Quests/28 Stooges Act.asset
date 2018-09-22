@@ -21,13 +21,13 @@ MonoBehaviour:
   tasks:
   - stat: 1
     difficulty: 3
-    description: 'The funny one. '
+    description: 'The funny charismatic one. '
   - stat: 3
     difficulty: 2
-    description: 'The sensible one. '
+    description: 'The sensible smart one. '
   - stat: 2
     difficulty: 3
-    description: 'The clumsy one. '
+    description: 'The clumsy not agile one. '
   succeed: "Oh, I loved the part where the funny one was eating a banana, and then
     the clumsy one tripped over it, and then the sensible just stood there shaking
     their head. What fun!\r\n"

@@ -21,13 +21,13 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 3
-    description: 'A knowledgeable conductor '
+    description: 'A generally knowledgeable and smart conductor. '
   - stat: 1
     difficulty: 4
-    description: 'A singer with a commanding presence '
+    description: 'A singer with a commanding presence and a powerful charisma. '
   - stat: 1
     difficulty: 4
-    description: 'Another singer with an equally commanding presence '
+    description: 'Another singer with an equally commanding presence and charisma. '
   succeed: "You sing for a dining hall full of nobles and as the night carries on,
     the whole room is singing along and having a great time. You are sent on your
     way with a hearty pat on the back from your king.\r\n"

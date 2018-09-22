@@ -22,16 +22,17 @@ MonoBehaviour:
   tasks:
   - stat: 3
     difficulty: 5
-    description: Mastermind to devise a plan.
+    description: 'A super smart mastermind to devise a plan '
   - stat: 1
     difficulty: 5
-    description: Someone to pose as a guest and cause a distraction.
+    description: 'Someone to pose as a guest and cause a distraction. Need to be a
+      charismatic people-person.  '
   - stat: 4
     difficulty: 5
-    description: Someone to disable guarding enchantments.
+    description: 'Someone to disable the magical guarding enchantments '
   - stat: 2
     difficulty: 6
-    description: 'Someone to sneak inside and grab the artifact. '
+    description: 'Someone with the agility to sneak inside and grab the artifact. '
   succeed: 'Succeed Description: Every heist requires a little bit of improvisation
     but despite that the whole thing basically went off without a hitch. You leave
     the party in style. '

@@ -20,9 +20,9 @@ MonoBehaviour:
   tasks:
   - stat: 1
     difficulty: 6
-    description: 'Someone to calm the citizens and help evacuate. '
+    description: 'Someone to calm with the charisma unite evacuation efforts. '
   - stat: 0
     difficulty: 6
-    description: 'Someone to fight off the small giants '
+    description: 'Someone strong to fight off the small giants '
   succeed: "You saved the town! \r\n"
   fail: You failed to save the town, the small giants have won.

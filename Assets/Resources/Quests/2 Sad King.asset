@@ -20,7 +20,7 @@ MonoBehaviour:
   tasks:
   - stat: 1
     difficulty: 8
-    description: "Go across the kingdom and raise as much enthusiasm about the King\u2019s
-      birthday as possible."
+    description: "Travel across the kingdom and use your charisma to raise as much
+      enthusiasm about the King\u2019s birthday as possible. "
   succeed: The birthday has been a huge success, thank you!
   fail: The King is disappointed in your work. You have failed.
