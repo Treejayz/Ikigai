@@ -56,6 +56,8 @@ public class GameLoopManager : MonoBehaviour {
 
     public void SubmitJobs()
     {
+        bool jobsSelected = false;
+
         for (int i = 0; i < 3; i++)
         {
             if (jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().value != 0)
@@ -65,12 +67,22 @@ public class GameLoopManager : MonoBehaviour {
                 {
                     GetComponent<PlayersTracker>().RetirePlayer(name);
                     numPlayers -= 1;
+                    jobsSelected = true;
                 }
             }
         }
 
-        GetComponent<CanvasManager>().SetQuest();
-        RollQuests();
+        if (jobsSelected) { GetComponent<CanvasManager>().ToggleStats(); }
+
+        if (numPlayers == 0)
+        {
+            GetComponent<PlayersTracker>().Done();
+        }
+        else
+        {
+            GetComponent<CanvasManager>().SetQuest();
+            RollQuests();
+        }
     }
 
     public void RollQuests()
@@ -114,7 +126,14 @@ public class GameLoopManager : MonoBehaviour {
             for (int i = 0; i < activeQuests.Count; i++)
             {
                 questUI[i].SetActive(true);
-                questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].tasks.Length + " Heroes Wanted:";
+                if (activeQuests[i].tasks.Length == 1)
+                {
+                    questUI[i].transform.GetChild(0).GetComponent<Text>().text = "Hero Wanted:";
+                }
+                else
+                {
+                    questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].tasks.Length + " Heroes Wanted:";
+                }
                 questUI[i].transform.GetChild(1).GetComponent<Text>().text = activeQuests[i].description + "\n\n<i>Reward: " + activeQuests[i].rewardDescription + "</i>";
                 
                 for (int j = activeQuests[i].tasks.Length; j < 5; j++) {

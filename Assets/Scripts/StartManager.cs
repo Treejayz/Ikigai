@@ -15,8 +15,6 @@ public class StartManager : MonoBehaviour {
 
     PlayersTracker playersTracker;
 
-    public GameObject statsCanvas;
-
 	// Use this for initialization
 	void Awake () {
         playersTracker = GetComponent<PlayersTracker>();
@@ -57,16 +55,6 @@ public class StartManager : MonoBehaviour {
         }
         // Generate those stats
         playersTracker.GenerateStats(numPlayers, playerNames);
-        // set the text fields in the stat canvas to see player stats (for now)
-        Text[] texts = statsCanvas.GetComponentsInChildren<Text>();
-        foreach (Text text in texts)
-        {
-            text.text = "";
-        }
-        for (int i = 0; i < playersTracker.players.Count; i++)
-        {
-            texts[i].text = playersTracker.players[i].display;
-        }
         // Start the main game loop
         GetComponent<GameLoopManager>().numPlayers = numPlayers;
         GetComponent<GameLoopManager>().RollQuests();
