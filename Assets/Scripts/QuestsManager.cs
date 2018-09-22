@@ -14,6 +14,10 @@ public class QuestsManager : MonoBehaviour {
         foreach(Object q in allQuests)
         {
             Quest quest = (Quest)q;
+            string title = q.name;
+            title = title.Substring(title.IndexOf(' ') + 1);
+            quest.title = title;
+
             // Sort by difficulty overall
             if (quest.overallDifficulty == 1)
             {

@@ -126,6 +126,8 @@ public class GameLoopManager : MonoBehaviour {
             for (int i = 0; i < activeQuests.Count; i++)
             {
                 questUI[i].SetActive(true);
+                questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].title;
+                /* Old thing, might be reused
                 if (activeQuests[i].tasks.Length == 1)
                 {
                     questUI[i].transform.GetChild(0).GetComponent<Text>().text = "Hero Wanted:";
@@ -134,9 +136,10 @@ public class GameLoopManager : MonoBehaviour {
                 {
                     questUI[i].transform.GetChild(0).GetComponent<Text>().text = activeQuests[i].tasks.Length + " Heroes Wanted:";
                 }
+                */
                 questUI[i].transform.GetChild(1).GetComponent<Text>().text = activeQuests[i].description + "\n\n<i>Reward: " + activeQuests[i].rewardDescription + "</i>";
                 
-                for (int j = activeQuests[i].tasks.Length; j < 5; j++) {
+                for (int j = activeQuests[i].tasks.Length; j < 4; j++) {
                     questUI[i].transform.GetChild(j + 2).gameObject.SetActive(false);
                 }
                 for (int j = 0; j < activeQuests[i].tasks.Length; j++) {

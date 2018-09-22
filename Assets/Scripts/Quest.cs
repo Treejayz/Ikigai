@@ -48,4 +48,7 @@ public class Quest : ScriptableObject {
     public string succeed = "You succeed";
     [TextArea(2, 10)]
     public string fail = "You fail";
+
+    [HideInInspector]
+    public string title = "Default Title";
 }
