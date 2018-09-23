@@ -233,6 +233,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114293834952758370, guid: 7c072faac579f0c498974a2ba6cc2f4b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 630374138}
+    - target: {fileID: 114409436594329712, guid: 7c072faac579f0c498974a2ba6cc2f4b,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 630374138}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
   m_IsPrefabAsset: 0
@@ -455,6 +465,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1936860162876642, guid: bcc4b9f6ba437f64291c4c6a45c088db,
     type: 2}
   m_PrefabInternal: {fileID: 305889633}
+--- !u!114 &630374138 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+    type: 2}
+  m_PrefabInternal: {fileID: 1900316734}
+  m_Script: {fileID: 11500000, guid: b51354a24049f7a438d47602abee8e0b, type: 3}
 --- !u!1 &670545141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1339271021634756, guid: bcc4b9f6ba437f64291c4c6a45c088db,

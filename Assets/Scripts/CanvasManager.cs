@@ -10,6 +10,14 @@ public class CanvasManager : MonoBehaviour {
     public GameObject resultsCanvas;
     public GameObject jobsCanvas;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ToggleStats();
+        }
+    }
+
     public void SetQuest()
     {
         startCanvas.SetActive(false);
