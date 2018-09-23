@@ -125,6 +125,7 @@ public class PlayersTracker : MonoBehaviour {
 
     public void Done ()
     {
+        GetComponent<CanvasManager>().enabled = false;
         statsButton.GetComponentInChildren<Text>().text = "Restart Game";
         statsButton.onClick.RemoveAllListeners();
         statsButton.onClick.AddListener(Restart);
