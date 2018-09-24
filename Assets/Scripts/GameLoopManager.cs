@@ -241,6 +241,7 @@ public class GameLoopManager : MonoBehaviour {
 				tasknum++;
 			}
 		}
+        GetComponent<CanvasManager>().displayNextquest();
 	}
 
 	public int calculateIkigai(int passion, int gold, float greed, int need, float care)
