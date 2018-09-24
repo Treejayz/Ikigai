@@ -65,7 +65,7 @@ public class CanvasManager : MonoBehaviour {
 		}
 		Quest quest = result.quest;
 		//set quest name, i think this needs a fix sorry
-		GameObject.Find ("QuestName").GetComponent<Text> ().text = result.quest.name;
+		GameObject.Find ("QuestName").GetComponent<Text> ().text = result.quest.title;
 
 		int taskWins = 0;
 		bool questSuccess = true;
