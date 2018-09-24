@@ -66,7 +66,7 @@ public class GameLoopManager : MonoBehaviour {
                 string name = jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().captionText.text;
                 if (name != "Select Player" && playerOptions.Contains(name))
                 {
-                    GetComponent<PlayersTracker>().RetirePlayer(name);
+                    GetComponent<PlayersTracker>().RetirePlayer(name, jobUI[i].transform.GetChild(0).GetComponent<Text>().text);
                     numPlayers -= 1;
                     jobsSelected = true;
                 }
@@ -91,9 +91,9 @@ public class GameLoopManager : MonoBehaviour {
 		round += 1;
 
 		// First get a list of quests
-		if (round <= 3) {
+		if (round <= 2) {
 			activeQuests = GetComponent<QuestsManager> ().ChooseQuests (1, numPlayers);
-		} else if (round <= 5) {
+		} else if (round <= 4) {
         
 			activeQuests = GetComponent<QuestsManager> ().ChooseQuests (2, numPlayers);
 		} else {

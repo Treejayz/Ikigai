@@ -65,7 +65,7 @@ public class CanvasManager : MonoBehaviour {
 		}
 		Quest quest = result.quest;
 		//set quest name, i think this needs a fix sorry
-		resultsCanvas.transform.GetChild(3).GetComponent<Text> ().text = result.quest.title;
+		resultsCanvas.transform.GetChild(2).GetComponent<Text> ().text = result.quest.title;
 
 		int taskWins = 0;
 		bool questSuccess = true;
@@ -120,7 +120,14 @@ public class CanvasManager : MonoBehaviour {
 			GameObject.Find ("Fail/Success").GetComponent<Text> ().text = "Successful Quest"; 
 		}
 		// set image for money based on success/failure/ammount of money
+
+
 		//set world stat text based on success/failure/ammount of world change
+        if (questSuccess)
+        {
+
+        }
+        
 
 		//going through tasks to set ikigai
 		for (int taskNum = 0; taskNum < 4; taskNum++) {

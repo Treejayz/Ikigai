@@ -51,4 +51,7 @@ public class Quest : ScriptableObject {
 
     [HideInInspector]
     public string title = "Default Title";
+
+    [HideInInspector]
+    public bool completed = false;
 }

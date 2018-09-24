@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class QuestsManager : MonoBehaviour {
 
-    List<Quest>[] easyQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
-    List<Quest>[] mediumQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
-    List<Quest>[] hardQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
+    List<Quest>[] easyQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
+    List<Quest>[] mediumQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
+    List<Quest>[] hardQuests = { new List<Quest>(), new List<Quest>(), new List<Quest>(), new List<Quest>() };
 
     // Use this for initialization
     void Awake () {
@@ -55,13 +55,14 @@ public class QuestsManager : MonoBehaviour {
         int numRolls = 100;
 
         bool tooFew = false;
+        int players = numPlayers;
 
         if (numPlayers < 3) {
-            numPlayers = 3;
+            players = 3;
             tooFew = true;
-        }
+        } 
 
-        while (numTasks < numPlayers && numRolls > 0)
+        while (numTasks < players && numRolls > 0)
         {
 
             // Choose a difficulty and number of tasks for this quest
@@ -70,7 +71,7 @@ public class QuestsManager : MonoBehaviour {
             // If we already have 2 quests, then the last one should have enough tasks for the remainder.
             if (quests.Count == 2)
             {
-                questTasks = numPlayers - numTasks;
+                questTasks = players - numTasks;
             }
             else
             {
@@ -80,7 +81,7 @@ public class QuestsManager : MonoBehaviour {
                 }
                 else
                 {
-                    questTasks = Random.Range(1, Mathf.Clamp((numPlayers - numTasks + 1), 1, 5));
+                    questTasks = Random.Range(1, Mathf.Clamp((players - numTasks + 1), 1, 5));
                 }  
             }
 
@@ -92,9 +93,10 @@ public class QuestsManager : MonoBehaviour {
                 if (easyQuests[questTasks-1].Count != 0)
                 {
                     int quest = Random.Range(0, easyQuests[questTasks-1].Count);
-                    if (!quests.Contains(easyQuests[questTasks-1][quest])) {
+                    if (!quests.Contains(easyQuests[questTasks-1][quest]) && !easyQuests[questTasks - 1][quest].completed) {
                         quests.Add(easyQuests[questTasks-1][quest]);
                         numTasks += questTasks;
+                        easyQuests[questTasks - 1][quest].completed = true;
                     }
                 }
             }
@@ -103,9 +105,10 @@ public class QuestsManager : MonoBehaviour {
                 if (mediumQuests[questTasks-1].Count != 0)
                 {
                     int quest = Random.Range(0, mediumQuests[questTasks-1].Count);
-                    if (!quests.Contains(mediumQuests[questTasks-1][quest])) {
+                    if (!quests.Contains(mediumQuests[questTasks-1][quest]) && !mediumQuests[questTasks - 1][quest].completed) {
                         quests.Add(mediumQuests[questTasks-1][quest]);
                         numTasks += questTasks;
+                        mediumQuests[questTasks - 1][quest].completed = true;
                     }
                 }
             }
@@ -114,9 +117,10 @@ public class QuestsManager : MonoBehaviour {
                 if (hardQuests[questTasks-1].Count != 0)
                 {
                     int quest = Random.Range(0, hardQuests[questTasks-1].Count);
-                    if (!quests.Contains(hardQuests[questTasks-1][quest])) {
+                    if (!quests.Contains(hardQuests[questTasks-1][quest]) && !hardQuests[questTasks - 1][quest].completed) {
                         quests.Add(hardQuests[questTasks-1][quest]);
                         numTasks += questTasks;
+                        hardQuests[questTasks - 1][quest].completed = true;
                     }
                 }
             }
@@ -127,7 +131,22 @@ public class QuestsManager : MonoBehaviour {
         // If we couldnt find enough quests, return null
         if (numRolls == 0)
         {
-            return null;
+            for(int i = 0; i < 4; i++)
+            {
+                foreach (Quest q in easyQuests[i])
+                {
+                    q.completed = false;
+                }
+                foreach (Quest q in mediumQuests[i])
+                {
+                    q.completed = false;
+                }
+                foreach (Quest q in hardQuests[i])
+                {
+                    q.completed = false;
+                }
+                return ChooseQuests(maxDifficulty, numPlayers);
+            }
         }
         // Otherwise return the quests!
         return quests;

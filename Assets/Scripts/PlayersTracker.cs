@@ -95,13 +95,12 @@ public class PlayersTracker : MonoBehaviour {
             playerstats.Greed = Greed;
             playerstats.Need = Need;
             playerstats.name = names[x];
-            playerstats.GenerateDisplay();
             players.Add(playerstats);
 
         }
     }
 
-    public void RetirePlayer(string name)
+    public void RetirePlayer(string name, string job)
     {
 
         foreach (Playerstats player in players)
@@ -110,8 +109,10 @@ public class PlayersTracker : MonoBehaviour {
             {
                 retired.Add(player);
                 players.Remove(player);
+                player.job = job;
+
                 statText[statIndex].SetActive(true);
-                statText[statIndex].transform.GetChild(0).GetComponent<Text>().text = player.name;
+                statText[statIndex].transform.GetChild(0).GetComponent<Text>().text = player.name + ", the " + player.job;
                 statText[statIndex].transform.GetChild(2).GetComponent<Text>().text = "Passion:\n" + (player.Passion[0] + 5) + "\n" + (player.Passion[1] + 5) + "\n" + (player.Passion[2] + 5) + "\n" + (player.Passion[3] + 5) + "\n" + (player.Passion[4] + 5) + "\n";
                 statText[statIndex].transform.GetChild(3).GetComponent<Text>().text = "Skill:\n" + player.Skill[0] + "\n" + player.Skill[1] + "\n" + player.Skill[2] + "\n" + player.Skill[3] + "\n" + player.Skill[4] + "\n";
                 statText[statIndex].transform.GetChild(4).GetComponent<Text>().text = "Greed: " + ((int)(player.Greed * 10)) + "\nNeed: " + ((int)(player.Need * 10));
