@@ -7,8 +7,9 @@ public class GameLoopManager : MonoBehaviour {
 
     // The 3 quest objects which contain some text and dropdown fields for the tasks
     public GameObject[] questUI = new GameObject[3];
-	public GameObject[] resultUI = new GameObject[3];
     public GameObject[] jobUI = new GameObject[3];
+	public QuestResults[] resultsUI = new QuestResults[3];
+	public int currentQuestResult;
 
     public Button submit;
 
@@ -209,103 +210,44 @@ public class GameLoopManager : MonoBehaviour {
     }
 	public void calculateResults()
 	{
+		currentQuestResult = 0;
 		int questnum = 0;
 
-		//makes sure all Text is cleared to start
-		foreach (GameObject result in resultUI)
-		{ 
-			for (int tcount = 0; tcount < result.GetComponentsInChildren<Text>().Length; tcount ++)
-			{
-				print (result.name);
-				result.GetComponentsInChildren<Text>()[tcount].text = "";
-			}
-		}
 		//Sorted player list
-		Playerstats[] playerlist = new Playerstats[numPlayers];
+		Playerstats[] playerlist = new Playerstats[Mathf.Max(3, GetComponent<PlayersTracker>().players.Count)];
 		foreach (Playerstats player in GetComponent<PlayersTracker>().players) {
 			//places players in list based on order of tasks
 			playerlist [selectedPlayers [player.name] - 1] = player;
 		}
-		//i is quest count
-	 	int i = 0;
-		int playercount = 0;
-		foreach (Quest quest in activeQuests) {
-			//i2 is task conut
+
+		for (int i = 0; i < 3; i++) {
+			resultsUI [i] = new QuestResults ();
+		}
+		int tasknum = 0;
+		//assigns each player to their task
+		for (int i = 0; i < activeQuests.Count; i++) {
+			//if quest doen't have players sullected cause less then 3 people skip
+			if(playerlist[tasknum] == null){
+				tasknum++;
+				continue;
+			}
+			resultsUI [i] = new QuestResults(); 
+			resultsUI[i].addQuest(activeQuests [i]);
 			int i2 = 0;
-			int taskSuccesses = 0;
-			bool questSuccess = true;
-			//check for if quest as a whole failed
-			foreach (Task task in quest.tasks) {
-				//player for the task
-				Playerstats player = playerlist [playercount];
-				int stat = 0;
-				if (task.stat == Task.Stat.Fight) {
-					stat = 0;
-				}else if (task.stat == Task.Stat.Charm) {
-					stat = 1;
-				}else if (task.stat == Task.Stat.Agility) {
-					stat = 2;
-				}else if (task.stat == Task.Stat.Smarts) {
-					stat = 3;
-				}else if (task.stat == Task.Stat.Magic) {
-					stat = 4;
-				}
-				string taskText = "";
-				if (task.difficulty <= player.Skill [stat]) {
-					//Successful task
-					taskText = player.name + " has succeeded at their task.\n";
-					taskSuccesses++;
-				} else {
-					taskText = player.name + " has failed their task.\n";
-				}
-				resultUI [i].GetComponentsInChildren<Text> () [i2 + 1].text = taskText; 
+			//adding to task per quest
+			foreach(Task task in activeQuests[i].tasks){
+				resultsUI [i].addPlayer (i2, playerlist [tasknum]);
 				i2++;
-				playercount++;
+				tasknum++;
 			}
-			if (taskSuccesses == 0 || taskSuccesses < quest.tasks.Length / 2 ) {
-				questSuccess = false;
-				resultUI [i].GetComponentsInChildren<Text> () [0].text = "Failed Quest"; 
-			} else {
-				resultUI [i].GetComponentsInChildren<Text> () [0].text = "Successful Quest"; 
-			}
-			playercount -= i2;
-			i2 = 0;
-			//calculated task ikigai and success for text purposes
-			foreach (Task task in quest.tasks) {
-				//player for the task
-				Playerstats player = playerlist [playercount];
-				int stat = 0;
-				if (task.stat == Task.Stat.Fight) {
-					stat = 0;
-				}else if (task.stat == Task.Stat.Charm) {
-					stat = 1;
-				}else if (task.stat == Task.Stat.Agility) {
-					stat = 2;
-				}else if (task.stat == Task.Stat.Smarts) {
-					stat = 3;
-				}else if (task.stat == Task.Stat.Magic) {
-					stat = 4;
-				}
-				string taskText = "";
-				if (questSuccess) {
-					//Successful quest
-					int ikigai = calculateIkigai(player.Passion[stat], quest.money, player.Greed, quest.need, player.Need);
-					taskText +=  player.name + " has recived "+ ikigai +" ikiai points for their work\n\n";
-				} else {
-					//Failed quest
-					int ikigai = calculateIkigai(player.Passion[stat], -5, player.Greed, quest.need * -1, player.Need);
-					taskText +=  player.name + " has recived "+ ikigai +" ikiai points for their work\n\n";
-				}
-				resultUI [i].GetComponentsInChildren<Text> () [i2 + 1].text += taskText; 
-				i2++;
-				playercount++;
-			}
-			i++;
 		}
 	}
 
 	public int calculateIkigai(int passion, int gold, float greed, int need, float care)
 	{
 		return (passion  + (int)(need * care) + (int)(gold * greed));
+	}
+	public int getActiveQuestNumber(){
+		return activeQuests.Count;
 	}
 }
