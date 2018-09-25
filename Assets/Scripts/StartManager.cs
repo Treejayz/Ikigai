@@ -47,11 +47,17 @@ public class StartManager : MonoBehaviour {
     {
         // First, get all the player names
         numPlayers = int.Parse(numPlayersDropdown.captionText.text);
-        print(numPlayers);
         string[] playerNames = new string[numPlayers];
         for (int i = 0; i < numPlayers; i++)
         {
             playerNames[i] = names[i].text;
+            for (int j = 0; j < i; j++)
+            {
+                if (string.Compare(playerNames[i], playerNames[j]) == 0)
+                {
+                    return;
+                }
+            }
         }
         // Generate those stats
         playersTracker.GenerateStats(numPlayers, playerNames);
