@@ -62,6 +62,30 @@ public class GameLoopManager : MonoBehaviour {
 
     public void SubmitJobs()
     {
+
+        string[] names = new string[3];
+        for (int i = 0; i < 3; i++)
+        {
+            if (jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().value != 0)
+            {
+                string name = jobUI[i].transform.GetChild(2).GetComponent<Dropdown>().captionText.text;
+                if (name != "Select Player" && playerOptions.Contains(name))
+                {
+                    names[i] = name;
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (string.Compare(names[i], names[j]) == 0)
+                        {
+                            return;
+                        }
+                    }
+                } else
+                {
+                    names[i] = name;
+                }
+            }
+        }
+
         bool jobsSelected = false;
 
         for (int i = 0; i < 3; i++)
