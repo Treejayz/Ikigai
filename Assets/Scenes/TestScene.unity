@@ -682,6 +682,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 79353549}
+    - target: {fileID: 1741508338740360, guid: 55247a96acfa766449792b6f8740619d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55247a96acfa766449792b6f8740619d, type: 2}
   m_IsPrefabAsset: 0
@@ -794,20 +798,6 @@ Prefab:
     - target: {fileID: 1907144661201368, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558132922649404, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685977326718024, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 224943107164810106, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
@@ -1169,11 +1159,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: taskUIs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4221073727001428, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1276,6 +1261,11 @@ Prefab:
       propertyPath: submit
       value: 
       objectReference: {fileID: 1994333553}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: turnOrderText
+      value: 
+      objectReference: {fileID: 627997752}
     - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
         type: 2}
       propertyPath: numPlayersDropdown
@@ -1338,6 +1328,11 @@ Prefab:
       objectReference: {fileID: 2126369877}
     - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
         type: 2}
+      propertyPath: leaderCanvas
+      value: 
+      objectReference: {fileID: 1371302324}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
       propertyPath: taskUIs.Array.data[0]
       value: 
       objectReference: {fileID: 910014870}
@@ -1356,16 +1351,6 @@ Prefab:
       propertyPath: taskUIs.Array.data[3]
       value: 
       objectReference: {fileID: 704432717}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: leaderCanvas
-      value: 
-      objectReference: {fileID: 1371302324}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: turnOrderText
-      value: 
-      objectReference: {fileID: 627997752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
   m_IsPrefabAsset: 0
