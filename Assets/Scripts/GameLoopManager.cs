@@ -13,8 +13,13 @@ public class GameLoopManager : MonoBehaviour {
 
     public Button submit;
 
+    public Text turnOrderText;
+
     // list of all the dropdowns
     List<Dropdown> playerSelects = new List<Dropdown>();
+
+    List<string> turnOrder = new List<string>();
+    int orderIndex = 0;
 
     [HideInInspector]
     public int numPlayers;
@@ -68,6 +73,11 @@ public class GameLoopManager : MonoBehaviour {
                 {
                     GetComponent<PlayersTracker>().RetirePlayer(name, jobUI[i].transform.GetChild(0).GetComponent<Text>().text);
                     numPlayers -= 1;
+                    if (orderIndex > turnOrder.IndexOf(name))
+                    {
+                        orderIndex -= 1;
+                    }
+                    turnOrder.Remove(name);
                     jobsSelected = true;
                 }
             }
@@ -88,6 +98,38 @@ public class GameLoopManager : MonoBehaviour {
 
     public void RollQuests()
     {
+        if (round == 0)
+        {
+            List<string> temp = new List<string>();
+            foreach (Playerstats player in GetComponent<PlayersTracker>().players)
+            {
+                temp.Add(player.name);
+            }
+
+            int n = temp.Count;
+            while(n > 0)
+            {
+                int x = Random.Range(0, n);
+                turnOrder.Add(temp[x]);
+                temp.RemoveAt(x);
+                n -= 1;
+            }
+            turnOrderText.text = turnOrder[0];
+            orderIndex += 1;
+        }
+        else
+        {
+            if (orderIndex >= turnOrder.Count)
+            {
+                orderIndex = 0;
+            }
+            turnOrderText.text = turnOrder[orderIndex];
+            orderIndex += 1;
+        }
+        if (numPlayers > 1)
+        {
+            GetComponent<CanvasManager>().ToggleLeader();
+        }
 		round += 1;
 
 		// First get a list of quests
@@ -102,7 +144,6 @@ public class GameLoopManager : MonoBehaviour {
 
         submit.interactable = false;
 
-        print(activeQuests.Count);
         // Do something if we are out of quests
         if (activeQuests == null)
         {

@@ -1691,7 +1691,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
@@ -1700,7 +1700,28 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Here is a description of the game
+  m_Text: 'The term <i>Ikigai</i> means reason for being. In this game, you will try
+    to find your ''Ikigai'' in a fantasy world. Each player is randomly assigned stats,
+    which you don''t discover until the end.
+
+
+    The stats are <b>Strength, Charisma, Agility, Smarts,</b> and <b>Magic</b>. For
+    each of these stats, your <b>Passion</b> and <b>Skill</b> is randomized. You are
+    also randomly assigned how much you care about <b>Money</b>, and how much you
+    care about what the world <b>Needs</b>.
+
+
+    You''ve just joined an adventuring group, and you need to go on quests to try
+    and figure out who you are. With each quest you will succeed or fail, but more
+    importantly you will get a score representing your satisfaction for doing the
+    quest.Try to keep track of how much you enjoyed the quest, and what it involved.
+
+
+    You will continue to go on quests with your group until you choose a life long
+    career and retire from adventuring. Once you choose a career, we will show you
+    your stats.
+
+    Happy Adventuring!'
 --- !u!114 &114686130380875610
 MonoBehaviour:
   m_ObjectHideFlags: 1

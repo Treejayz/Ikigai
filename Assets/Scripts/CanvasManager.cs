@@ -10,6 +10,7 @@ public class CanvasManager : MonoBehaviour {
     public GameObject statsCanvas;
     public GameObject resultsCanvas;
     public GameObject jobsCanvas;
+    public GameObject leaderCanvas;
 
     string[] statTypes = { "strength", "charisma", "agility", "smarts", "magic" };
 
@@ -48,7 +49,11 @@ public class CanvasManager : MonoBehaviour {
     {
         resultsCanvas.SetActive(!resultsCanvas.activeSelf);
     }
-	public void displayNextquest()
+    public void ToggleLeader()
+    {
+        leaderCanvas.SetActive(!leaderCanvas.activeSelf);
+    }
+    public void displayNextquest()
 	{
 		//if end of quests turn off an "reset" results
 		if(GetComponent<GameLoopManager> ().currentQuestResult >= GetComponent<GameLoopManager> ().getActiveQuestNumber()){
@@ -136,34 +141,56 @@ public class CanvasManager : MonoBehaviour {
         string output = "";
         if (!questSuccess)
         {
-            output += "You got no money.\n";
+            output += "You got no money,";
             GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[0];
         } else
         {
             if (quest.money == -5)
             {
-                output += "You got no money.\n";
+                output += "You got no money,";
                 GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[0];
             }
             else if (quest.money == 5)
             {
-                output += "You got a lot of money.\n";
+                output += "You got a lot of money,";
                 GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[4];
             }
             else if (quest.money <= -2)
             {
-                output += "You got very little money.\n";
+                output += "You got very little money,";
                 GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[1];
             }
             else if (quest.money <= 1)
             {
-                output += "You got an average amount of money.\n";
+                output += "You got an average amount of money,";
                 GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[2];
             }
             else
             {
-                output += "You got a good amount of money.\n";
+                output += "You got a good amount of money,";
                 GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[3];
+            }
+        }
+
+        if (questSuccess)
+        {
+            if (Mathf.Abs(quest.money - quest.need) >= 7)
+            {
+                output += " but\n";
+            }
+            else
+            {
+                output += " and\n";
+            }
+        } else
+        {
+            if (quest.need <= -2)
+            {
+                output += " but\n";
+            }
+            else
+            {
+                output += " and\n";
             }
         }
 
@@ -172,46 +199,46 @@ public class CanvasManager : MonoBehaviour {
         {
             if (quest.need == -5)
             {
-                output += "The world is worse now.";
+                output += "the world is worse now.";
             }
             else if (quest.need == 5)
             {
-                output += "You did a great deed!";
+                output += "you did a great deed!";
             }
             else if (quest.need <= -2)
             {
-                output += "You did a pretty bad thing.";
+                output += "you did a pretty bad thing.";
             }
             else if (quest.need <= 1)
             {
-                output += "Life goes on as usual.";
+                output += "life goes on as usual.";
             }
             else
             {
-                output += "You helped some people today!";
+                output += "you helped some people today!";
             }
         }
         else
         {
             if (quest.need == -5)
             {
-                output += "The world is glad you failed.";
+                output += "the world is glad you failed.";
             }
             else if (quest.need == 5)
             {
-                output += "You failed, when the world desperately needed you.";
+                output += "you failed, when the world desperately needed you.";
             }
             else if (quest.need <= -2)
             {
-                output += "It's probably a good thing you failed...";
+                output += "it's probably a good thing you failed...";
             }
             else if (quest.need <= 1)
             {
-                output += "Life goes on as usual anyway.";
+                output += "life goes on as usual anyway.";
             }
             else
             {
-                output += "You missed an opportunity to help others.";
+                output += "you missed an opportunity to help others.";
             }
         }
 

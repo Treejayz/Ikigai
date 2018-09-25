@@ -2823,8 +2823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Here is a sample description for what is happening here, to be filled in
-    by someone at some point.
+  m_Text: Choosing a job will retire you from adventuring, and show you your stats.
 --- !u!222 &222041402066625898
 CanvasRenderer:
   m_ObjectHideFlags: 1
