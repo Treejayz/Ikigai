@@ -85,8 +85,8 @@ public class PlayersTracker : MonoBehaviour {
             }
 
             // Greed and need are from 0-1
-            Greed = Random.Range(0, 10) / 10f;
-            Need = Random.Range(0, 10) / 10f;
+            Greed = Random.Range(0, 11) / 10f;
+            Need = Random.Range(0, 11) / 10f;
 
             // set the values and then generates a display
             Playerstats playerstats = new Playerstats();

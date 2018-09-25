@@ -66,7 +66,26 @@ public class QuestsManager : MonoBehaviour {
         {
 
             // Choose a difficulty and number of tasks for this quest
-            int difficulty = Random.Range(0, maxDifficulty) + 1;
+
+            int difficulty = 1;
+            if (maxDifficulty == 2)
+            {
+                int x = Random.Range(0, 3);
+                if (x >= 1)
+                {
+                    difficulty = 2;
+                }
+            } else if (maxDifficulty == 3)
+            {
+                int x = Random.Range(0, 11);
+                if (x >= 6)
+                {
+                    difficulty = 3;
+                } else if (x >= 2)
+                {
+                    difficulty = 2;
+                }
+            }
             int questTasks;
             // If we already have 2 quests, then the last one should have enough tasks for the remainder.
             if (quests.Count == 2)
