@@ -246,6 +246,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &275426913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1756324612701900, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135321196}
 --- !u!1 &289767896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1632204466620788, guid: 29684987b022a9b40a1ba74bd6846369,
@@ -362,6 +367,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 141282894}
   m_Script: {fileID: 853051423, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &704432717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1171469614729404, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135321196}
 --- !u!1 &781442951
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +444,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1878823937372350, guid: 4226defa353973346a67f7b01433d7ca,
     type: 2}
   m_PrefabInternal: {fileID: 1202063624}
+--- !u!1 &879209395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1558132922649404, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135321196}
 --- !u!1 &887076332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1234386832299270, guid: 4226defa353973346a67f7b01433d7ca,
@@ -445,6 +460,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 141282894}
   m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &910014870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1999151221166382, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135321196}
 --- !u!1001 &1042254991
 Prefab:
   m_ObjectHideFlags: 0
@@ -656,6 +676,24 @@ Prefab:
       propertyPath: m_Name
       value: ResultsCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1907144661201368, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558132922649404, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224685977326718024, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224943107164810106, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
   m_IsPrefabAsset: 0
@@ -808,6 +846,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: taskUIs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4221073727001428, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -970,6 +1013,26 @@ Prefab:
       propertyPath: jobsCanvas
       value: 
       objectReference: {fileID: 2126369877}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: taskUIs.Array.data[0]
+      value: 
+      objectReference: {fileID: 910014870}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: taskUIs.Array.data[1]
+      value: 
+      objectReference: {fileID: 879209395}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: taskUIs.Array.data[2]
+      value: 
+      objectReference: {fileID: 275426913}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: taskUIs.Array.data[3]
+      value: 
+      objectReference: {fileID: 704432717}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
   m_IsPrefabAsset: 0
@@ -1162,6 +1225,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 79353549}
+    - target: {fileID: 1413567102453524, guid: 29684987b022a9b40a1ba74bd6846369, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29684987b022a9b40a1ba74bd6846369, type: 2}
   m_IsPrefabAsset: 0

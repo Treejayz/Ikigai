@@ -16,7 +16,7 @@ MonoBehaviour:
     need anyone particularly strong, just someone to push them down basically.  \r\n"
   rewardDescription: "Just a little loose change in my pocket.\r\n"
   money: -2
-  need: 3
+  need: -3
   overallDifficulty: 1
   tasks:
   - stat: 0
@@ -24,3 +24,5 @@ MonoBehaviour:
     description: 'Someone to bully a group of hobbits. Very minor strength needed. '
   succeed: "Nice! You\u2019ve managed to bully the hobbits.\r\n"
   fail: "You failed to have the physical strength the bully the hobbits.\r\n"
+  title: Default Title
+  completed: 0

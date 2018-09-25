@@ -11,6 +11,12 @@ public class CanvasManager : MonoBehaviour {
     public GameObject resultsCanvas;
     public GameObject jobsCanvas;
 
+    string[] statTypes = { "strength", "charisma", "agility", "smarts", "magic" };
+
+    public Sprite[] moneySprites;
+    public Sprite[] statSprites;
+    public GameObject[] taskUIs;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -71,10 +77,7 @@ public class CanvasManager : MonoBehaviour {
 		bool questSuccess = true;
 		//figuring out task results for sake of quest success/failure and also setting task success + name
 		for (int taskNum = 0; taskNum < 4; taskNum++) {
-			print (taskNum);
-			string taskname = "Task";
-			taskname += taskNum.ToString();
-			GameObject taskUI = GameObject.Find (taskname);
+            GameObject taskUI = taskUIs[taskNum];
 			Text[] texts = taskUI.GetComponentsInChildren<Text> ();
 			//if task doesn't exist skipp and set blank
 			if (taskNum >= quest.tasks.Length) {
@@ -106,10 +109,10 @@ public class CanvasManager : MonoBehaviour {
 			//sucesses at task text
 			if (task.difficulty <= player.Skill [stat]) {
 				//Successful task
-				texts [2].text = player.name + " has succeeded at their task.\n";
+				texts [2].text = player.name + " has succeeded at their " + statTypes[stat] + " task.\n";
 				taskWins++;
 			} else {
-				texts [2].text = player.name + " has failed their task.\n";
+				texts [2].text = player.name + " has failed their " + statTypes[stat] + " task.\n";
 			}
 		}
 		//sets if the quest failed or succeded
@@ -134,27 +137,33 @@ public class CanvasManager : MonoBehaviour {
         if (!questSuccess)
         {
             output += "You got no money.\n";
+            GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[0];
         } else
         {
             if (quest.money == -5)
             {
                 output += "You got no money.\n";
+                GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[0];
             }
             else if (quest.money == 5)
             {
                 output += "You got a lot of money.\n";
+                GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[4];
             }
             else if (quest.money <= -2)
             {
                 output += "You got very little money.\n";
+                GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[1];
             }
             else if (quest.money <= 1)
             {
                 output += "You got an average amount of money.\n";
+                GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[2];
             }
             else
             {
                 output += "You got a good amount of money.\n";
+                GameObject.Find("MoneyAmount").GetComponent<Image>().sprite = moneySprites[3];
             }
         }
 
@@ -210,15 +219,15 @@ public class CanvasManager : MonoBehaviour {
 
 		//going through tasks to set ikigai
 		for (int taskNum = 0; taskNum < 4; taskNum++) {
-			string taskname = "Task";
-			taskname += taskNum.ToString();
-			GameObject taskUI = GameObject.Find (taskname);
-			Text[] texts = taskUI.GetComponentsInChildren<Text> ();
+            GameObject taskUI = taskUIs[taskNum];
+            Text[] texts = taskUI.GetComponentsInChildren<Text> ();
 			if (taskNum >= quest.tasks.Length) {
 				texts [1].text = "";
-				//set image to blank
+                //set image to blank
+                taskUI.SetActive(false);
 				continue;
 			}
+            taskUI.SetActive(true);
 
 			Playerstats player = result.playerlist [taskNum];
 			Task task = quest.tasks[taskNum];
@@ -234,6 +243,10 @@ public class CanvasManager : MonoBehaviour {
 			}else if (task.stat == Task.Stat.Magic) {
 				stat = 4;
 			}
+
+            // set stat picture
+            taskUI.GetComponentInChildren<Image>().sprite = statSprites[stat];
+
             //setting ikigai number
             int ikigai = 0;
 			if (questSuccess) {

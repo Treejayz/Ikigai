@@ -129,6 +129,23 @@ MonoBehaviour:
   statsCanvas: {fileID: 0}
   resultsCanvas: {fileID: 0}
   jobsCanvas: {fileID: 0}
+  moneySprites:
+  - {fileID: 21300000, guid: 5fe36abba3d96d24c971929f4d4099e5, type: 3}
+  - {fileID: 21300000, guid: 4e5a97316495c3a4b80526e96f7c3dc8, type: 3}
+  - {fileID: 21300000, guid: fc03e295ac62cad468cb39b4b6bf75cf, type: 3}
+  - {fileID: 21300000, guid: 4b5e0c3263f5b4d45b1bc9213d1a3f94, type: 3}
+  - {fileID: 21300000, guid: ed87467f015a8154ea490d2162a08756, type: 3}
+  statSprites:
+  - {fileID: 21300000, guid: 2bed5f77457b2014d983581fbbd94bef, type: 3}
+  - {fileID: 21300000, guid: 86fd6d839222ec941b31cd8fd6027275, type: 3}
+  - {fileID: 21300000, guid: cae518bcf6a95f545a35fc968d63ddf2, type: 3}
+  - {fileID: 21300000, guid: 49ca5348b0c9221449c50ad2c38def9a, type: 3}
+  - {fileID: 21300000, guid: 4130c7aa8cb135242ac35730802ec4d4, type: 3}
+  taskUIs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114948808600989200
 MonoBehaviour:
   m_ObjectHideFlags: 1
