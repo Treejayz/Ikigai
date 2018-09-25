@@ -83,14 +83,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  resultUI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   jobUI:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  resultsUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentQuestResult: 0
   submit: {fileID: 0}
   numPlayers: 0
 --- !u!114 &114796408140352838
@@ -104,6 +105,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c1c831efe59b24380d9efd654f2c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  statsButton: {fileID: 0}
 --- !u!114 &114830724994828966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,4 +148,3 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  statsCanvas: {fileID: 0}

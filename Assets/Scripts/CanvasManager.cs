@@ -113,21 +113,100 @@ public class CanvasManager : MonoBehaviour {
 			}
 		}
 		//sets if the quest failed or succeded
-		if (taskWins == 0 || taskWins < quest.tasks.Length / 2 ) {
+		if (taskWins == 0 || taskWins * 2 < quest.tasks.Length) {
 			questSuccess = false;
 			GameObject.Find ("Fail/Success").GetComponent<Text> ().text = "Failed Quest"; 
 		} else {
 			GameObject.Find ("Fail/Success").GetComponent<Text> ().text = "Successful Quest"; 
 		}
-		// set image for money based on success/failure/ammount of money
 
+        // Set the quest result text
+        if (questSuccess) {
+            resultsCanvas.transform.GetChild(4).GetComponent<Text>().text = quest.succeed;
+        }
+        else
+        {
+            resultsCanvas.transform.GetChild(4).GetComponent<Text>().text = quest.fail;
+        }
 
-		//set world stat text based on success/failure/ammount of world change
+        // set image for money based on success/failure/ammount of money
+        string output = "";
+        if (!questSuccess)
+        {
+            output += "You got no money.\n";
+        } else
+        {
+            if (quest.money == -5)
+            {
+                output += "You got no money.\n";
+            }
+            else if (quest.money == 5)
+            {
+                output += "You got a lot of money.\n";
+            }
+            else if (quest.money <= -2)
+            {
+                output += "You got very little money.\n";
+            }
+            else if (quest.money <= 1)
+            {
+                output += "You got an average amount of money.\n";
+            }
+            else
+            {
+                output += "You got a good amount of money.\n";
+            }
+        }
+
+        //set world stat text based on success/failure/ammount of world change
         if (questSuccess)
         {
-
+            if (quest.need == -5)
+            {
+                output += "The world is worse now.";
+            }
+            else if (quest.need == 5)
+            {
+                output += "You did a great deed!";
+            }
+            else if (quest.need <= -2)
+            {
+                output += "You did a pretty bad thing.";
+            }
+            else if (quest.need <= 1)
+            {
+                output += "Life goes on as usual.";
+            }
+            else
+            {
+                output += "You helped some people today!";
+            }
         }
-        
+        else
+        {
+            if (quest.need == -5)
+            {
+                output += "The world is glad you failed.";
+            }
+            else if (quest.need == 5)
+            {
+                output += "You failed, when the world desperately needed you.";
+            }
+            else if (quest.need <= -2)
+            {
+                output += "It's probably a good thing you failed...";
+            }
+            else if (quest.need <= 1)
+            {
+                output += "Life goes on as usual anyway.";
+            }
+            else
+            {
+                output += "You missed an opportunity to help others.";
+            }
+        }
+
+        GameObject.Find("Money&Need").GetComponent<Text>().text = output;
 
 		//going through tasks to set ikigai
 		for (int taskNum = 0; taskNum < 4; taskNum++) {
@@ -155,15 +234,27 @@ public class CanvasManager : MonoBehaviour {
 			}else if (task.stat == Task.Stat.Magic) {
 				stat = 4;
 			}
-			//setting ikigai number
+            //setting ikigai number
+            int ikigai = 0;
 			if (questSuccess) {
 				//Successful quest
-				texts [1].text = GetComponent<GameLoopManager> ().calculateIkigai(player.Passion[stat], quest.money, player.Greed, quest.need, player.Need).ToString();
+				ikigai = GetComponent<GameLoopManager> ().calculateIkigai(player.Passion[stat], quest.money, player.Greed, quest.need, player.Need);
 			} else {
 				//Failed quest
-				texts [1].text = GetComponent<GameLoopManager> ().calculateIkigai(player.Passion[stat], -5, player.Greed, quest.need * -1, player.Need).ToString();
+				ikigai = GetComponent<GameLoopManager> ().calculateIkigai(player.Passion[stat], -5, player.Greed, quest.need * -1, player.Need);
 			}
-		}
+            texts[1].text = ikigai.ToString();
+            if (ikigai > 0)
+            {
+                texts[1].color = Color.green;
+            } else if (ikigai < 0)
+            {
+                texts[1].color = Color.red;
+            } else
+            {
+                texts[1].color = Color.white;
+            }
+        }
 		GetComponent<GameLoopManager> ().currentQuestResult++;
 	}
 }

@@ -243,10 +243,6 @@ Prefab:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 630374138}
-    - target: {fileID: 1087114277255806, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c072faac579f0c498974a2ba6cc2f4b, type: 2}
   m_IsPrefabAsset: 0
@@ -660,10 +656,6 @@ Prefab:
       propertyPath: m_Name
       value: ResultsCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1907144661201368, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
   m_IsPrefabAsset: 0
@@ -769,10 +761,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1900316736}
-    - target: {fileID: 1219082312079522, guid: 4226defa353973346a67f7b01433d7ca, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4226defa353973346a67f7b01433d7ca, type: 2}
   m_IsPrefabAsset: 0
@@ -852,121 +840,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: startCanvas
-      value: 
-      objectReference: {fileID: 1436288409}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: questCanvas
-      value: 
-      objectReference: {fileID: 1734692582}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: statsCanvas
-      value: 
-      objectReference: {fileID: 1375123970}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: resultsCanvas
-      value: 
-      objectReference: {fileID: 89685048}
-    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: jobsCanvas
-      value: 
-      objectReference: {fileID: 2126369877}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: numPlayersDropdown
-      value: 
-      objectReference: {fileID: 672850919}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[0]
-      value: 
-      objectReference: {fileID: 1294330203}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[1]
-      value: 
-      objectReference: {fileID: 891463187}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[2]
-      value: 
-      objectReference: {fileID: 462405547}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[3]
-      value: 
-      objectReference: {fileID: 132473238}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[4]
-      value: 
-      objectReference: {fileID: 453759650}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: names.Array.data[5]
-      value: 
-      objectReference: {fileID: 131658860}
-    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: statsCanvas
-      value: 
-      objectReference: {fileID: 1375123970}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: questUI.Array.data[0]
-      value: 
-      objectReference: {fileID: 289767896}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: questUI.Array.data[1]
-      value: 
-      objectReference: {fileID: 2015284567}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: questUI.Array.data[2]
-      value: 
-      objectReference: {fileID: 2015284566}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: resultUI.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: resultUI.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: resultUI.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: jobUI.Array.data[0]
-      value: 
-      objectReference: {fileID: 1452141445}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: jobUI.Array.data[1]
-      value: 
-      objectReference: {fileID: 1946111689}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: jobUI.Array.data[2]
-      value: 
-      objectReference: {fileID: 583945135}
-    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
-        type: 2}
-      propertyPath: submit
-      value: 
-      objectReference: {fileID: 1994333553}
     - target: {fileID: 114796408140352838, guid: 567fb411a8709c948ade2c9a28284a90,
         type: 2}
       propertyPath: statText.Array.data[0]
@@ -1002,6 +875,101 @@ Prefab:
       propertyPath: statsButton
       value: 
       objectReference: {fileID: 1225590745}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: questUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 289767896}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: questUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 2015284567}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: questUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 2015284566}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: jobUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 1452141445}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: jobUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 1946111689}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: jobUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 583945135}
+    - target: {fileID: 114668057203062096, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: submit
+      value: 
+      objectReference: {fileID: 1994333553}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: numPlayersDropdown
+      value: 
+      objectReference: {fileID: 672850919}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[0]
+      value: 
+      objectReference: {fileID: 1294330203}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[1]
+      value: 
+      objectReference: {fileID: 891463187}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[2]
+      value: 
+      objectReference: {fileID: 462405547}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[3]
+      value: 
+      objectReference: {fileID: 132473238}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[4]
+      value: 
+      objectReference: {fileID: 453759650}
+    - target: {fileID: 114948808600989200, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: names.Array.data[5]
+      value: 
+      objectReference: {fileID: 131658860}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: startCanvas
+      value: 
+      objectReference: {fileID: 1436288409}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: questCanvas
+      value: 
+      objectReference: {fileID: 1734692582}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: statsCanvas
+      value: 
+      objectReference: {fileID: 1375123970}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: resultsCanvas
+      value: 
+      objectReference: {fileID: 89685048}
+    - target: {fileID: 114830724994828966, guid: 567fb411a8709c948ade2c9a28284a90,
+        type: 2}
+      propertyPath: jobsCanvas
+      value: 
+      objectReference: {fileID: 2126369877}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb411a8709c948ade2c9a28284a90, type: 2}
   m_IsPrefabAsset: 0
@@ -1029,11 +997,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 224566261282259884, guid: 29684987b022a9b40a1ba74bd6846369,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1199,45 +1162,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 79353549}
-    - target: {fileID: 1413567102453524, guid: 29684987b022a9b40a1ba74bd6846369, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 1900316736}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: displayNextquest
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: calculateResults
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626274414228150, guid: 29684987b022a9b40a1ba74bd6846369,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleResults
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29684987b022a9b40a1ba74bd6846369, type: 2}
   m_IsPrefabAsset: 0

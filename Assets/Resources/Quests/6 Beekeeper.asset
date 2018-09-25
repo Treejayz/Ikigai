@@ -14,7 +14,7 @@ MonoBehaviour:
   description: "Human beekeepers are having troubles. The bees are anxious and producing
     worse honey, the honey isn\u2019t selling, and there are wild bears surrounding
     the town due to the excess honey. Without honey the town will collapse soon.\r\n"
-  rewardDescription: "The Elves can pay you handsomely. \r\n"
+  rewardDescription: "No money, only honey. \r\n"
   money: -5
   need: 5
   overallDifficulty: 1
@@ -30,3 +30,5 @@ MonoBehaviour:
     description: 'Someone strong to defend the town against the bears. '
   succeed: "You succeeded in getting them out of this sticky situation!\r\n"
   fail: "You\u2019ve only made things worse! The town has collapsed and is very angry."
+  title: Beekeeper
+  completed: 1
