@@ -838,23 +838,19 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114447690195230322, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2049801151}
     - target: {fileID: 114503910748359098, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1900316736}
+    - target: {fileID: 114447690195230322, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2049801151}
     - target: {fileID: 1907144661201368, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
       propertyPath: m_Name
       value: ResultsCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1907144661201368, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25d6b0bf82d0b4e4b9a94f25b78d2f8a, type: 2}
