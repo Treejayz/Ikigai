@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 36 Brigands Wanted
+  m_EditorClassIdentifier: 
+  description: Hey, so I know this street that has a lot of rich marks on it. If I
+    point you to it, will you split the profits with me? Just to be clear, we will
+    be robbing these people.
+  rewardDescription: "You\u2019ll make a fair bit more than a day\u2019s wages holding
+    people up."
+  money: 2
+  need: -2
+  overallDifficulty: 1
+  tasks:
+  - stat: 0
+    difficulty: 2
+    description: A strong fighter to shake people down
+  - stat: 2
+    difficulty: 3
+    description: An agile pickpocket
+  succeed: The money you get at the end of the day is illegitimate but definitely
+    hard earned.
+  fail: "You aren\u2019t quite cut out for this kind of work. That\u2019s probably
+    a good thing."
+  title: Default Title
+  completed: 0

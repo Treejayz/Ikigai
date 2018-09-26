@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 35 Where's the Beef
+  m_EditorClassIdentifier: 
+  description: "Listen, I woke up to find all of my cows missing. I am just one simple
+    farmer. I can\u2019t look after my other animals and hunt down 60 heads of cattle.
+    Could you help me out?"
+  rewardDescription: "I absolutely can\u2019t afford to meet your standard rates but
+    I can give you something."
+  money: -2
+  need: 2
+  overallDifficulty: 1
+  tasks:
+  - stat: 3
+    difficulty: 3
+    description: Someone smart to hunt down where the cows are now
+  succeed: Well look at that, you got them all back in one piece! Thank you so much!
+  fail: "You can\u2019t even hunt down a few lousy cows? I figured you\u2019d be able
+    to find at least one!"
+  title: Default Title
+  completed: 0

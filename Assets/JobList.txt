@@ -1,7 +1,7 @@
 Wandering Jester-Fantasy entertainment is no laughing matter.
 Rebuilding Rock Goblin Homes-At Rock Bottom Wages!
 Henchman-to fight off intruders, will pay handsomely.
-Professional Thief-Hey kid, you think you can make it in the big-time?
+Professional Thief-Hey kid, you think you can make it in the bigtime?
 Circus Acrobat-You’ll need to jump through hoops to get this job.
 Lifting Iron Blocks for the King-We pay by the block.
 Assistant to the Regional Tyrant of Mount Doom-All of the fun of Tyrannical rule with half of the assassinations!
@@ -12,3 +12,14 @@ Tyrant of Mount Doom-All the gold you can imagine.
 Professor of Architecture, Mathematics, and other smart topics-Reminder: we don’t pay our professors. 
 Literally just a Squire-The pay’s not bad so long as you can hold some coconuts.
 Assassin-leave your scruples at the door and you’ll make a killing.
+Diplomat-Keep the world from plunging into chaos, one vacation at a time! 
+Cat-Saver-You know those people who run into burning buildings to save cats? That’s you.
+Fantasy Civil Rights Attourney-Every world needs one of you. Good on you!
+Crooked Sheriff-These “laws” aren’t going to “enforce” themselves!
+Royal Quotesmith-Write inspirational quotes to keep the king happy and for him to drunkenly repeat at parties.
+Dragon Racer-Dragons are the fastest animals alive but fame and fortune awaits those that can outrun them.
+Gladiator-Ah, the attention of the crowd, the feeling of beating your opponent. Nothing beats it!
+Confidence Trickster-Talking people out of their money, the illegal way.
+Regional Lord-Talk people out of their money, the legal way.
+Brewer of Cosmetic Potions-Nothing says “I love you.” like a potion that insinuates you are ugly.
+Hyper Wizard-Far more wizardly than your standard wizard. We’re talking like, 3 beards minimum.

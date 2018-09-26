@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 37 Two Left Feet
+  m_EditorClassIdentifier: 
+  description: My ex placed a curse on me that made me a bad dancer! Please, help
+    me take back the dance floor!
+  rewardDescription: "I\u2019ll pay more than your standard daily rate!"
+  money: 1
+  need: 1
+  overallDifficulty: 1
+  tasks:
+  - stat: 4
+    difficulty: 4
+    description: A magical healer to lift this curse
+  succeed: The poor guy has no sign of a curse on him but to make him happy you give
+    him a simple blessing to help with his dancing.
+  fail: This curse must be expertly placed. It is so hard to find that eventually
+    you just give up.
+  title: Default Title
+  completed: 0

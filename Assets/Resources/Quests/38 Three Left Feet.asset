@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 38 Three Left Feet
+  m_EditorClassIdentifier: 
+  description: Some quack doctor cursed me to always be dancing. Please!
+  rewardDescription: "I\u2019ll pay more than your standard daily rate!"
+  money: 1
+  need: -1
+  overallDifficulty: 2
+  tasks:
+  - stat: 4
+    difficulty: 6
+    description: A magical healer to lift this curse
+  succeed: This is one tricky curse. You manage to lift it from him but the dark energy
+    floats off before you can destroy it. Whatever, at least you did what you came
+    here to do.
+  fail: "This curse is really in there. It\u2019d take someone a little more knowledgeable
+    than you to get this thing out."
+  title: Default Title
+  completed: 0

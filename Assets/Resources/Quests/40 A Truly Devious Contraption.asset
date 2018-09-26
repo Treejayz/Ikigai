@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 40 A Truly Devious Contraption
+  m_EditorClassIdentifier: 
+  description: "I\u2019ve been gifted a puzzle box by my dead uncle and I can\u2019t
+    for the life of me figure out how to open it. Any help would be appreciated."
+  rewardDescription: I can pay whatever you standard rate is.
+  money: 0
+  need: 0
+  overallDifficulty: 3
+  tasks:
+  - stat: 3
+    difficulty: 8
+    description: Someone really smart to help me crack this thing
+  succeed: Wow, that this was tough but you solved it, no problem. You really are
+    smart! I never would have gotten this gift card out without you!
+  fail: "It\u2019s ok, I can\u2019t open it either. Thanks for trying though."
+  title: Default Title
+  completed: 0

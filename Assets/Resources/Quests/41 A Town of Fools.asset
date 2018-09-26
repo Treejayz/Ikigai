@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def35328abf807642a28749c74b51699, type: 3}
+  m_Name: 41 A Town of Fools
+  m_EditorClassIdentifier: 
+  description: 'Many people in our town forgot their jobs and need your help to relearn
+    the basics  '
+  rewardDescription: We have an emergency fund for this sort of thing. It should be
+    three times your normal rate.
+  money: 3
+  need: 2
+  overallDifficulty: 1
+  tasks:
+  - stat: 1
+    difficulty: 3
+    description: Someone really charismatic to help the mayor remember how to do a
+      press conference.
+  - stat: 2
+    difficulty: 3
+    description: Someone fast and agile that can remind the courier how to quickly
+      deliver packages.
+  - stat: 0
+    difficulty: 3
+    description: 'A strong fighter that can remind the guards how to defend us '
+  - stat: 3
+    difficulty: 3
+    description: A very smart person that can remind the city planners how to do paperwork
+  succeed: "Oh! THAT\u2019S how you do it. I think we\u2019ve got it from here for
+    the most part. Thank you!"
+  fail: "You seem to be just as clueless as the rest of us . If you can\u2019t help,
+    please just leave."
+  title: Default Title
+  completed: 0
